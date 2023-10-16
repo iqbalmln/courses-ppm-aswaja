@@ -89,10 +89,9 @@ const courses = ref([
         class="flex flex-col md:flex-row border-2 p-4 rounded-xl gap-8 mb-4"
       >
         <figure class="md:h-96 md:w-1/3">
-          <NuxtImg
+          <img
             class="w-full h-full object-cover bg-zinc-50 rounded-l-xl"
             preload
-            placeholder
             :src="course.figure"
             loading="lazy"
           />

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 definePageMeta({
   layout: "home",
@@ -300,18 +300,18 @@ onMounted(() => {
           class="h-[700px]"
         >
           <SwiperSlide class="flex flex-col">
-            <NuxtImg
+            <img
               class="w-full object-cover bg-zinc-50"
               preload
-              src="model.png"
+              src="~/assets/images/model.png"
               loading="lazy"
             />
           </SwiperSlide>
           <SwiperSlide class="flex flex-col">
-            <NuxtImg
+            <img
               class="w-full object-cover bg-zinc-50"
               preload
-              src="model1.png"
+              src="~/assets/images/model1.png"
               loading="lazy"
             />
           </SwiperSlide>

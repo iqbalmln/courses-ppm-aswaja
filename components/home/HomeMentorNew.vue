@@ -1,7 +1,19 @@
 <script setup lang="ts">
+import abdulloh from "~/assets/images/mentors/abdulloh.jpeg"
+import muhsin from "~/assets/images/mentors/muhsin.jpg"
+import anif from "~/assets/images/mentors/anif.jpg"
+import fadmi from "~/assets/images/mentors/fadmi.jpg"
+import harsa from "~/assets/images/mentors/harsa.jpeg"
+import mustaghfiroh from "~/assets/images/mentors/mustaghfiroh.jpg"
+import pusvyta from "~/assets/images/mentors/pusvyta.jpg"
+import saeroni from "~/assets/images/mentors/saeroni.jpg"
+import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg"
+import farid from "~/assets/images/mentors/farid.jpg"
+import defaultImage from "~/assets/images/mentors/default.webp";
+
 const mentors = [
   {
-    photo: "mentors/abdulloh.jpeg",
+    photo: abdulloh,
     name: "Abdulloh Badruzzaman, S.T.,M.T.",
     focus: [
       "Pengembangan Web",
@@ -12,14 +24,14 @@ const mentors = [
     slug: "abdulloh-badruzzaman",
   },
   {
-    photo: "mentors/muhsin.jpg",
+    photo: muhsin,
     name: "Ahmad Muhlisin",
     focus: ["Jurnalistik"],
     link: "#",
     slug: "ahmad-muhlisin",
   },
   {
-    photo: "mentors/anif.jpg",
+    photo: anif,
     name: "Anif Faizi",
     focus: [
       "Manajemen Penjualan dan pemasaran",
@@ -30,14 +42,14 @@ const mentors = [
     slug: "anif-faizi",
   },
   {
-    photo: "",
+    photo: undefined,
     name: "Bosman Batubara, Ph.D.",
     focus: ["Keteknikan Sipil", "Keteknikan Lingkungan"],
     link: "#",
     slug: "bosman-batubara",
   },
   {
-    photo: "mentors/fadmi.jpg",
+    photo: fadmi,
     name: "Fadmi Rina, S.Kom., M.Kom.",
     focus: [
       "Pengembangan Web",
@@ -48,14 +60,14 @@ const mentors = [
     slug: "fadmi-rina",
   },
   {
-    photo: "mentors/harsa.jpeg",
+    photo: harsa,
     name: "Harsa Permata, M.Phil.",
     focus: ["Jurnalistik", "Public Relation"],
     link: "https://www.linkedin.com/in/harsa-permata-041a8272/",
     slug: "harsa-permata",
   },
   {
-    photo: "",
+    photo: undefined,
     name: "Maisaroh, S.E., M.Si.",
     focus: [
       "Manajemen Penjualan dan pemasaran",
@@ -67,21 +79,21 @@ const mentors = [
     slug: "maisaroh",
   },
   {
-    photo: "",
+    photo: undefined,
     name: "Mar'atul Uliyah, S.Pd.",
     focus: ["Jurnalistik"],
     link: "#",
     slug: "maratul-uliyah",
   },
   {
-    photo: "mentors/mustaghfiroh.jpg",
+    photo: mustaghfiroh,
     name: "Mustaghfiroh Rahayu, S.Th.I., M.A.",
     focus: ["Manejemen Sumber Daya Manusia", "spesialis pemasaran digital"],
     link: "https://www.linkedin.com/in/mustaghfiroh-rahayu-9a69ba214/",
     slug: "mustaghfiroh-rahayu",
   },
   {
-    photo: "mentors/pusvyta.jpg",
+    photo: pusvyta,
     name: "Pusvyta Sari, S.Pd., M.Pd.",
     focus: [
       "Profesional Periklanan dan Pemasaran",
@@ -92,21 +104,21 @@ const mentors = [
     slug: "pusvyta-sari",
   },
   {
-    photo: "mentors/saeroni.jpg",
+    photo: saeroni,
     name: "Saeroni, S.Ag., M.H.",
     focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
     slug: "saeroni",
   },
   {
-    photo: "mentors/mursyaddad.jpg",
+    photo: mursyaddad,
     name: "Achmad Musyaddad, S.I.P.",
     focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
     slug: "achmad-musyaddad",
   },
   {
-    photo: "mentors/farid.jpg",
+    photo: farid,
     name: "Farid Assifa, S.Fil.",
     focus: ["Jurnalistik"],
     link: "https://www.linkedin.com/in/farid-assifa-90112645/",
@@ -152,8 +164,8 @@ const tagClass = (focus: string) => {
         class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[320px] md:h-[350px]"
       >
         <figure class="relative w-full h-[200px]">
-          <NuxtImg
-            :src="mentor.photo !== '' ? mentor.photo : 'mentors/default.webp'"
+          <img
+            :src="mentor.photo || defaultImage"
             class="rounded w-full h-full object-cover"
           />
           <NuxtLink

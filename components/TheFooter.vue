@@ -7,7 +7,7 @@
     <section class="flex flex-col md:flex-row justify-between gap-6 lg:gap-16">
       <ul class="flex flex-col gap-3 text-sm items-start md:w-2/12 lg:w-2/12">
         <figure>
-          <NuxtImg src="logo.png" width="100" height="100" />
+          <img src="~/assets/images/logo.png" width="100" height="100" />
         </figure>
         <li class="text-sm">Membuka Potensi, Membangun Keunggulan!</li>
       </ul>

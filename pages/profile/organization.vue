@@ -66,7 +66,7 @@ const persons = [
     </section>
     <section class="flex justify-center px-12 gap-8 tes">
       <figure>
-        <NuxtImg src="profile/structure.png" />
+        <img src="~/assets/images/profile/structure.png" />
       </figure>
     </section>
   </div>
@@ -74,7 +74,7 @@ const persons = [
 
 <style scoped>
 .tes {
-  background: url("./assets/images/background.png");
+  background: url("~/assets/images/background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
