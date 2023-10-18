@@ -20,6 +20,10 @@ import internetAddiction from "~/assets/images/blog/internet-addiction.jpg"
 import sustainableBusiness from "~/assets/images/blog/sustainable-business.jpg"
 import madrasahRiset from "~/assets/images/blog/madrasah-riset.jpeg"
 
+useHead({
+  title: 'Blog dan Galeri',
+})
+
 const galleries = reactive([
   {
     image: cryptocurrency,

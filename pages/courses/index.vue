@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Program Kursus",
+});
 const courses = ref([
   {
     name: "Dasar-Dasar Ilmu Pemasaran Digital untuk Menjadi Profesional Pemasaran Digital",
@@ -114,7 +117,9 @@ const courses = ref([
             </h2>
             <p class="text-gray-600">
               Mentor:
-              <span class="font-bold text-black">{{ course.mentors.join(', ') }}</span>
+              <span class="font-bold text-black">{{
+                course.mentors.join(", ")
+              }}</span>
             </p>
             <p
               class="text-gray-600 text-sm md:text-base line-clamp-5 md:line-clamp-none"

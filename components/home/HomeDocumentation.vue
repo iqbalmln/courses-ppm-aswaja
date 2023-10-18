@@ -1,46 +1,53 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import cryptocurrency from "~/assets/images/blog/cryptocurrency.jpg"
+import coffee from "~/assets/images/blog/coffee.jpg"
+import webinar from "~/assets/images/blog/webinar.jpg"
+import madrasahRiset from "~/assets/images/blog/madrasah-riset.jpeg"
+import internetAddiction from "~/assets/images/blog/internet-addiction.jpg"
+import wiseThinking from "~/assets/images/blog/wise-thinking.jpg"
+</script>
 
 <template>
   <div class="wrapper">
     <figure class="satu h-32 md:h-64 w-full">
       <img
         class="w-full h-full object-cover rounded-lg"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        :src="cryptocurrency"
         alt=""
       />
     </figure>
     <figure class="dua h-32 md:h-64 w-full">
       <img
         class="w-full h-full object-cover rounded-lg"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        :src="wiseThinking"
         alt=""
       />
     </figure>
     <figure class="tiga h-32 md:h-64 w-full">
       <img
         class="w-full h-full object-cover rounded-lg"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        :src="webinar"
         alt=""
       />
     </figure>
     <figure class="empat h-32 md:h-64 w-full">
       <img
         class="w-full h-full object-cover rounded-lg"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        :src="coffee"
         alt=""
       />
     </figure>
     <figure class="lima h-32 md:h-64 w-full">
       <img
         class="w-full h-full object-cover rounded-lg"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        :src="internetAddiction"
         alt=""
       />
     </figure>
     <figure class="enam h-32 md:h-64 w-full">
       <img
         class="w-full h-full object-cover rounded-lg"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+        :src="madrasahRiset"
         alt=""
       />
     </figure>

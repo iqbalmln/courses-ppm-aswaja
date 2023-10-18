@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import abdulloh from "~/assets/images/mentors/abdulloh.jpeg"
-import muhsin from "~/assets/images/mentors/muhsin.jpg"
-import anif from "~/assets/images/mentors/anif.jpg"
-import fadmi from "~/assets/images/mentors/fadmi.jpg"
-import harsa from "~/assets/images/mentors/harsa.jpeg"
-import mustaghfiroh from "~/assets/images/mentors/mustaghfiroh.jpg"
-import pusvyta from "~/assets/images/mentors/pusvyta.jpg"
-import saeroni from "~/assets/images/mentors/saeroni.jpg"
-import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg"
-import farid from "~/assets/images/mentors/farid.jpg"
+import abdulloh from "~/assets/images/mentors/abdulloh.jpeg";
+import muhsin from "~/assets/images/mentors/muhsin.jpg";
+import bosman from "~/assets/images/mentors/bosman.jpeg";
+import anif from "~/assets/images/mentors/anif.jpg";
+import fadmi from "~/assets/images/mentors/fadmi.jpg";
+import harsa from "~/assets/images/mentors/harsa.jpeg";
+import mustaghfiroh from "~/assets/images/mentors/mustaghfiroh.jpg";
+import pusvyta from "~/assets/images/mentors/pusvyta.jpg";
+import saeroni from "~/assets/images/mentors/saeroni.jpg";
+import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg";
+import farid from "~/assets/images/mentors/farid.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 const mentors = [
@@ -42,7 +43,7 @@ const mentors = [
     slug: "anif-faizi",
   },
   {
-    photo: undefined,
+    photo: bosman,
     name: "Bosman Batubara, Ph.D.",
     focus: ["Keteknikan Sipil", "Keteknikan Lingkungan"],
     link: "#",
@@ -154,39 +155,55 @@ const tagClass = (focus: string) => {
     ? "bg-indigo-100"
     : "";
 };
+
+const visibleMentors = ref(mentors.slice(0, 4));
+
+const showMore = () => {
+  // Menambahkan 4 produk berikutnya ke daftar tampilan
+  visibleMentors.value = [
+    ...visibleMentors.value,
+    ...mentors.slice(
+      visibleMentors.value.length,
+      visibleMentors.value.length + 9
+    ),
+  ];
+};
 </script>
 
 <template>
-  <section class="grid md:grid-cols-4 gap-8">
-    <div v-for="mentor in mentors">
-      <NuxtLink
-        :to="'/mentor/' + mentor.slug"
-        class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[320px] md:h-[350px]"
-      >
-        <figure class="relative w-full h-[200px]">
-          <img
-            :src="mentor.photo || defaultImage"
-            class="rounded w-full h-full object-cover"
-          />
-          <NuxtLink
-            class="absolute top-2 left-2 z-10 bg-white rounded"
-            :to="mentor.link"
-            target="_blank"
-          >
-            <Icon name="ph:linkedin-logo-fill" color="#1869c5" size="2rem" />
-          </NuxtLink>
-        </figure>
-        <div class="flex flex-wrap">
-          <p
-            v-for="focus in mentor.focus"
-            class="lowercase text-[10px] my-0.5 rounded-full px-1"
-            :class="tagClass(focus)"
-          >
-            {{ focus }}
-          </p>
-        </div>
-        <p class="text-sm font-semibold">{{ mentor.name }}</p>
-      </NuxtLink>
-    </div>
-  </section>
+  <div class="flex flex-col justify-center items-center gap-8">
+    <section class="grid md:grid-cols-4 gap-8">
+      <div v-for="mentor in visibleMentors">
+        <NuxtLink
+          :to="'/mentor/' + mentor.slug"
+          class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[320px] md:h-[350px]"
+        >
+          <figure class="relative w-full h-[200px]">
+            <img
+              :src="mentor.photo || defaultImage"
+              class="rounded w-full h-full object-cover"
+            />
+            <NuxtLink
+              class="absolute top-2 left-2 z-10 bg-white rounded"
+              :to="mentor.link"
+              target="_blank"
+            >
+              <Icon name="ph:linkedin-logo-fill" color="#1869c5" size="2rem" />
+            </NuxtLink>
+          </figure>
+          <div class="flex flex-wrap">
+            <p
+              v-for="focus in mentor.focus"
+              class="lowercase text-[10px] my-0.5 rounded-full px-1"
+              :class="tagClass(focus)"
+            >
+              {{ focus }}
+            </p>
+          </div>
+          <p class="text-sm font-semibold">{{ mentor.name }}</p>
+        </NuxtLink>
+      </div>
+    </section>
+    <BaseTheButton @click="showMore" title="Lihat Semua Mentor" variant="outlined" />
+  </div>
 </template>

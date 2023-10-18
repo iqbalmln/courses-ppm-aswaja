@@ -1,20 +1,29 @@
 <script setup lang="ts">
 useHead({
-  title: 'History',
-})
+  title: "Sejarah",
+});
 </script>
 
 <template>
   <div class="flex flex-col gap-12 md:gap-24 py-24 md:py-12">
-    <section class="px-6 md:px-12 flex flex-col md:flex-row justify-between items-end gap-4 md:gap-0">
-      <h1 style="line-height: 120%" class="font-semibold text-4xl md:text-5xl flex-1 leading-tight">
+    <section
+      class="px-6 md:px-12 flex flex-col md:flex-row justify-between items-end gap-4 md:gap-0"
+    >
+      <h1
+        style="line-height: 120%"
+        class="font-semibold text-4xl md:text-5xl flex-1 leading-tight"
+      >
         LPK Aswaja Nusantara Career Development Center
       </h1>
-      <p class="flex-1 text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi
-        in eveniet enim eum hic, reiciendis dicta ipsam blanditiis consequuntur
-        incidunt praesentium nesciunt voluptatum, quidem iusto eligendi! Ab
-        officiis amet cum a voluptates suscipit.
+      <p class="flex-1 text-gray-600 text-justify">
+        LPK Aswaja Nusantara Career Development Center merupakan buah yang lahir
+        dari rahim Pesantren Pelajar-Mahasiswa Aswaja Nusantara. Dalam
+        sejarahnya, pesantren dan madrasah telah berkiprah sejak jauh sebelum
+        kata Indonesia dikenal, fase perjuangan bangsa, menjaga dan meningkatkan
+        intelektualitas bangsa, pengembangan ilmu pengetahuan, ikut
+        menyelesaikan persoalan-persoalan sosial-kemasyarakatan dan kebangsaan
+        dengan spirit dan basis nilai keislaman tanpa tercerabut dari
+        nilai-nilai luhur budaya bangsa.
       </p>
     </section>
     <figure class="md:h-[700px]">
@@ -27,19 +36,9 @@ useHead({
     <section class="px-6 md:px-12 border-y border-gray-200 flex flex-col gap-8">
       <div class="pt-4 flex flex-col md:flex-row justify-between gap-6">
         <h2 class="font-semibold text-4xl md:text-5xl flex-1">
-          Lorem ipsum dolor sit amet.
+          Transformasi dalam Era Globalisasi
         </h2>
         <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base">
-          <p>
-            LPK Aswaja Nusantara Career Development Center merupakan buah yang
-            lahir dari rahim Pesantren Pelajar-Mahasiswa Aswaja Nusantara. Dalam
-            sejarahnya, pesantren dan madrasah telah berkiprah sejak jauh
-            sebelum kata Indonesia dikenal, fase perjuangan bangsa, menjaga dan
-            meningkatkan intelektualitas bangsa, pengembangan ilmu pengetahuan,
-            ikut menyelesaikan persoalan-persoalan sosial-kemasyarakatan dan
-            kebangsaan dengan spirit dan basis nilai keislaman tanpa tercerabut
-            dari nilai-nilai luhur budaya bangsa.
-          </p>
           <p>
             Dengan berjalannya waktu, dunia begitu cepat berkembang. Masyarakat,
             pasar, dan negara mengalami transformasi besar-besaran. Sudah
@@ -49,13 +48,6 @@ useHead({
             keunggulan dan keberhasilan sekelompok orang, komunitas, kelompok,
             dan negara harus selalu dibayar dengan keterpurukan yang lainnya.
           </p>
-        </div>
-      </div>
-      <div class="pb-4 flex flex-col md:flex-row-reverse justify-between gap-6">
-        <h2 class="font-semibold text-4xl md:text-5xl flex-1">
-          Lorem ipsum dolor sit amet.
-        </h2>
-        <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base">
           <p>
             Dalam konteks pendidikan, jawaban terhadap semua tantangan di atas
             adalah kemampuan pesantren dan madrasah untuk menghasilkan generasi
@@ -66,6 +58,13 @@ useHead({
             menyiapkan baik santri maupun masyarakat umum memiliki keahlian
             kerja sesuai kebutuhan Dunia Usaha dan Dunia Industri (DUDI).
           </p>
+        </div>
+      </div>
+      <div class="pb-4 flex flex-col md:flex-row-reverse justify-between gap-6">
+        <h2 class="font-semibold text-4xl md:text-5xl flex-1">
+          Fokus dan Pendekatan
+        </h2>
+        <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base">
           <p>
             Fokus dari Aswaja Nusantara Career Development Center adalah
             mempertemukan expert dari industri terkait dengan murid pada usia

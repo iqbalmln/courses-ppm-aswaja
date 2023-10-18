@@ -6,7 +6,7 @@ definePageMeta({
   layout: "home",
 });
 useHead({
-  title: "My App",
+  title: "Beranda",
 });
 
 const courses = ref([
@@ -302,17 +302,13 @@ onMounted(() => {
           <SwiperSlide class="flex flex-col">
             <img
               class="w-full object-cover bg-zinc-50"
-              preload
               src="~/assets/images/model.png"
-              loading="lazy"
             />
           </SwiperSlide>
           <SwiperSlide class="flex flex-col">
             <img
               class="w-full object-cover bg-zinc-50"
-              preload
               src="~/assets/images/model1.png"
-              loading="lazy"
             />
           </SwiperSlide>
         </Swiper>
@@ -344,8 +340,7 @@ onMounted(() => {
         >
           <h3 class="text-3xl md:text-4xl font-bold">Program Kursus</h3>
           <p class="text-gray-600 text-xs md:text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
-            provident.
+            Berikut program kursus yang bisa anda pilih sesuai dengan minat anda. 
           </p>
         </header>
         <HomeCourses :courses="courses" />
@@ -375,8 +370,7 @@ onMounted(() => {
       >
         <h3 class="text-3xl md:text-4xl font-bold">Dokumentasi Kegiatan</h3>
         <p class="text-gray-600 text-xs md:text-sm">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
-          provident.
+          Beberapa potret kegiatan yang kami lakukan.
         </p>
       </header>
       <HomeDocumentation />

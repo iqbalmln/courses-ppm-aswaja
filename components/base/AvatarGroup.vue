@@ -1,20 +1,24 @@
 <script setup lang="ts">
+import sarah from "~/assets/images/Sarah.png"
+import fathur from "~/assets/images/Fathur.png"
+import iqbal from "~/assets/images/Iqbal.png"
+import galih from "~/assets/images/Galih.png"
 const avatars = [
   {
     id: 0,
-    src: "https://randomuser.me/api/portraits/women/65.jpg",
+    src: sarah,
   },
   {
     id: 1,
-    src: "https://randomuser.me/api/portraits/men/25.jpg",
+    src: fathur,
   },
   {
     id: 2,
-    src: "https://randomuser.me/api/portraits/women/25.jpg",
+    src: iqbal,
   },
   {
     id: 3,
-    src: "https://via.placeholder.com/300/09f/fff.png",
+    src: galih,
   },
 ];
 </script>
