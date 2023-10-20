@@ -76,13 +76,19 @@ const goDown = () => {
       </figure>
       <div
         class="absolute md:static bg-white md:bg-transparent min-h-fit left-0 z-50 w-full md:w-auto flex p-3"
-        :class="isDown ? 'top-[10vh] duration-500' : 'top-[-700%] duration-1000'"
+        :class="
+          isDown ? 'top-[10vh] duration-500' : 'top-[-700%] duration-1000'
+        "
       >
         <ul
           class="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-8"
         >
           <li v-for="menu in menus">
-            <NuxtLink v-if="!menu.children" :to="menu.url">
+            <NuxtLink
+              v-if="!menu.children"
+              :to="menu.url"
+              activeClass="text-[#618264] border-b-2 border-[#618264] font-bold"
+            >
               {{ menu.name }}
             </NuxtLink>
             <p
@@ -142,7 +148,11 @@ const goDown = () => {
         </ul>
       </div>
       <div class="flex items-center gap-6">
-        <BaseTheButton class="hidden md:block" title="Daftar Sekarang" variant="outlined" />
+        <BaseTheButton
+          class="hidden md:block"
+          title="Daftar Sekarang"
+          variant="outlined"
+        />
         <div class="block md:hidden">
           <Icon name="ph:list" @click="goDown" size="1.5rem" />
         </div>

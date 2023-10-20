@@ -340,7 +340,8 @@ onMounted(() => {
         >
           <h3 class="text-3xl md:text-4xl font-bold">Program Kursus</h3>
           <p class="text-gray-600 text-xs md:text-sm">
-            Berikut program kursus yang bisa anda pilih sesuai dengan minat anda. 
+            Berikut program kursus yang bisa anda pilih sesuai dengan minat
+            anda.
           </p>
         </header>
         <HomeCourses :courses="courses" />
@@ -352,13 +353,13 @@ onMounted(() => {
     <!-- Testimony -->
     <section class="px-6 md:px-12 py-12 flex flex-col md:gap-8 bg-[#48604a]">
       <header class="flex items-center justify-center">
-        <div>
+        <div class="flex flex-col gap-2">
           <h3 class="text-3xl md:text-4xl font-bold text-center text-white">
             Apa Kata Mereka
           </h3>
           <p class="text-xs md:text-sm text-center md:text-left text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
-            provident.
+            Pendapat dari orang-orang yang benar-benar telah menjalani
+            perjalanan bersama kami
           </p>
         </div>
       </header>

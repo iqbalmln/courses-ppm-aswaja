@@ -5,6 +5,7 @@ useHead({
 const courses = ref([
   {
     name: "Dasar-Dasar Ilmu Pemasaran Digital untuk Menjadi Profesional Pemasaran Digital",
+    slug: "digital-marketing",
     price: "Rp.1.500.000",
     description:
       "Program pelatihan ini menyediakan pemahaman dan keterampilan dalam pemasaran dan periklanan digital, dengan fokus pada Facebook dan Instagram. Peserta akan mempelajari konsep dasar, perencanaan media, teknik pembuatan iklan, strategi konsumen, dan analisis laporan iklan melalui Business Manager.",
@@ -21,6 +22,7 @@ const courses = ref([
   },
   {
     name: "Menyusun Konten Berita Digital Berdasarkan Kaidah Jurnalistik untuk Wartawan dan Kontributor Media",
+    slug: "news",
     price: "Rp.1.500.000",
     description:
       "Dalam era digital, seorang jurnalis perlu memiliki kemampuan untuk menciptakan konten berita yang dapat diunggah secara efektif melalui platform online seperti blog dan media sosial. Mereka harus memiliki kompetensi digital, termasuk kemampuan mengidentifikasi, mengumpulkan, menilai, dan berbagi informasi yang relevan. Selain itu, mereka perlu mampu melakukan penelitian jurnalistik, memahami data, dan menciptakan konten multimedia.",
@@ -39,6 +41,7 @@ const courses = ref([
   },
   {
     name: "Menyusun dan dan membentuk budaya organisasi yang kuat untuk manajer sumber daya manusia",
+    slug: "organization",
     price: "Rp.1.500.000",
     description:
       "Sebagai seorang Manajer Sumber Daya Manusia, penting untuk memahami pentingnya membangun struktur organisasi yang sesuai dan efektif. Hal ini juga melibatkan pengenalan akan dampak positif kultur perusahaan pada retensi karyawan, produktivitas, kualitas kerja, dan lingkungan kerja yang positif.",
@@ -51,6 +54,7 @@ const courses = ref([
   },
   {
     name: "Perancangan Basis Data dengan SQL untuk calon engineer basis data",
+    slug: "database-design",
     price: "Rp.1.500.000",
     description:
       "Calon engineer database cenderung menggunakan spreadsheet karena mudah digunakan, meskipun memiliki kelemahan dalam manajemen data. Sementara common database dengan SQL memungkinkan manajemen data yang lebih terstruktur dan analisis cepat, seringkali calon engineer belum mahir dalam SQL, mengakibatkan data tidak terstruktur.",
@@ -63,6 +67,7 @@ const courses = ref([
   },
   {
     name: "Merancang sistem pengelolaan limbah cair rumah tangga kawasan urban untuk insinyur sipil dan lingkungan",
+    slug: "wastewater-management-system",
     price: "Rp.1.500.000",
     description:
       "Insinyur lingkungan harus memiliki kemampuan untuk mengidentifikasi jenis limbah, menganalisis karakteristik pencemar air limbah, mengevaluasi tingkat pencemaran, serta menerapkan tindakan Keselamatan dan Kesehatan Kerja (K3) dalam pengolahan air limbah. Permintaan pekerjaan di bidang insinyur lingkungan terus meningkat seiring dengan meningkatnya kesadaran akan isu lingkungan, menunjukkan peran penting mereka dalam menjaga kualitas air dan lingkungan hidup.",
@@ -127,7 +132,9 @@ const courses = ref([
               {{ course.description }}
             </p>
             <div class="w-full flex gap-4">
-              <BaseTheButton title="Detail" variant="outlined" />
+              <NuxtLink :to="`courses/${course.slug}`">
+                <BaseTheButton title="Detail" variant="outlined" />
+              </NuxtLink>
               <BaseTheButton title="Daftar" variant="fill" />
             </div>
           </div>
