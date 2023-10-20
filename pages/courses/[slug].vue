@@ -72,7 +72,7 @@ const courses = ref([
       },
       {
         name: "Anif Faizi",
-        image: mustaghfiroh,
+        image: anif,
       },
       {
         name: "Harsa Permata, M.Phil.",
