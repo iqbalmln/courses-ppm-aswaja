@@ -228,78 +228,80 @@ const courses = ref([
 </script>
 
 <template>
-  <div v-for="course in courses" class="">
-    <section
-      class="flex flex-col gap-12"
-      v-if="course.slug === route.params.slug"
-    >
-      <header class="flex justify-end relative px-6 md:px-12 py-24 md:py-12">
-        <div
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-zinc-50 p-8 w-7/12 font-semibold"
-        >
-          <h2 class="text-5xl leading-tight">{{ course.name }}</h2>
-        </div>
-        <figure class="h-[500px] w-2/3 self-end">
-          <img :src="course.image" alt="" class="w-full h-full object-cover" />
-        </figure>
-      </header>
-      <div
-        class="bg-[#48604a] px-6 md:px-12 py-24 md:py-12 flex flex-col gap-4 items-center justify-center"
+  <div>
+    <div v-for="course in courses" class="">
+      <section
+        class="flex flex-col gap-12"
+        v-if="course.slug === route.params.slug"
       >
-        <h3 class="text-3xl md:text-3xl text-center text-white">
-          Mentor yang akan mengajar
-        </h3>
-        <div class="flex gap-8 text-white">
-          <figcaption
-            v-for="mentor in course.mentors"
-            class="flex flex-col items-center"
-          >
-            <div class="w-[200px] h-[200px]">
-              <img
-                :src="mentor.image || defaultImage"
-                alt=""
-                class="w-full h-full object-cover rounded-full"
-              />
-            </div>
-            <p class="mt-4">{{ mentor.name }}</p>
-          </figcaption>
-        </div>
-      </div>
-      <div v-for="faq in course.faq" class="flex flex-col gap-4 px-6 md:px-12">
-        <div
-          class="flex gap-4 w-2/3"
-          :class="faq.id === 1 ? 'self-end flex-row-reverse' : 'self-start'"
-        >
-          <figure class="w-[500px]">
-            <img :src="faq.image" alt="" class="w-full h-full object-contain" />
-          </figure>
-          <div class="flex flex-col gap-4">
-            <h3 class="font-semibold text-2xl">{{ faq.question }}</h3>
-            <p class="text-gray-600 text-justify">{{ faq.answer }}</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="w-10/12 text-blue-brand flex flex-col gap-6 text-center bg-[#48604a] rounded-xl mx-auto py-6 mb-12 text-white"
-      >
-        <header class="flex flex-col gap-2">
-          <h2 class="text-2xl md:text-3xl">
-            Segera Bergabung <span class="font-bold border-b">Sekarang!</span>
-          </h2>
-          <p class="text-xs md:text-sm">
-            Dapatkan pengalaman lebih dari belajar!
-          </p>
-        </header>
-        <div>
+        <header class="flex justify-end relative px-6 md:px-12 py-24 md:py-12">
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-4"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-zinc-50 p-8 w-7/12 font-semibold"
           >
-            <button class="border border-white px-4 py-2 rounded-full">
-              Daftar Sekarang
-            </button>
+            <h2 class="text-5xl leading-tight">{{ course.name }}</h2>
+          </div>
+          <figure class="h-[500px] w-2/3 self-end">
+            <img :src="course.image" alt="" class="w-full h-full object-cover" />
+          </figure>
+        </header>
+        <div
+          class="bg-[#48604a] px-6 md:px-12 py-24 md:py-12 flex flex-col gap-4 items-center justify-center"
+        >
+          <h3 class="text-3xl md:text-3xl text-center text-white">
+            Mentor yang akan mengajar
+          </h3>
+          <div class="flex gap-8 text-white">
+            <figcaption
+              v-for="mentor in course.mentors"
+              class="flex flex-col items-center"
+            >
+              <div class="w-[200px] h-[200px]">
+                <img
+                  :src="mentor.image || defaultImage"
+                  alt=""
+                  class="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <p class="mt-4">{{ mentor.name }}</p>
+            </figcaption>
           </div>
         </div>
-      </div>
-    </section>
+        <div v-for="faq in course.faq" class="flex flex-col gap-4 px-6 md:px-12">
+          <div
+            class="flex gap-4 w-2/3"
+            :class="faq.id === 1 ? 'self-end flex-row-reverse' : 'self-start'"
+          >
+            <figure class="w-[500px]">
+              <img :src="faq.image" alt="" class="w-full h-full object-contain" />
+            </figure>
+            <div class="flex flex-col gap-4">
+              <h3 class="font-semibold text-2xl">{{ faq.question }}</h3>
+              <p class="text-gray-600 text-justify">{{ faq.answer }}</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-10/12 text-blue-brand flex flex-col gap-6 text-center bg-[#48604a] rounded-xl mx-auto py-6 mb-12 text-white"
+        >
+          <header class="flex flex-col gap-2">
+            <h2 class="text-2xl md:text-3xl">
+              Segera Bergabung <span class="font-bold border-b">Sekarang!</span>
+            </h2>
+            <p class="text-xs md:text-sm">
+              Dapatkan pengalaman lebih dari belajar!
+            </p>
+          </header>
+          <div>
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-4"
+            >
+              <button class="border border-white px-4 py-2 rounded-full">
+                Daftar Sekarang
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </template>

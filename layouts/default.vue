@@ -3,7 +3,9 @@
 <template>
   <div class="bg-zinc-50">
     <TheHeader />
-    <slot />
+    <div>
+      <slot />
+    </div>
     <TheFooter />
   </div>
 </template>
