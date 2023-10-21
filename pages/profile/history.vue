@@ -15,7 +15,7 @@ useHead({
       >
         LPK Aswaja Nusantara Career Development Center
       </h1>
-      <p class="flex-1 text-gray-600 text-justify">
+      <p class="flex-1 text-gray-600 text-sm md:text-base text-justify">
         LPK Aswaja Nusantara Career Development Center merupakan buah yang lahir
         dari rahim Pesantren Pelajar-Mahasiswa Aswaja Nusantara. Dalam
         sejarahnya, pesantren dan madrasah telah berkiprah sejak jauh sebelum
@@ -38,7 +38,7 @@ useHead({
         <h2 class="font-semibold text-4xl md:text-5xl flex-1">
           Transformasi dalam Era Globalisasi
         </h2>
-        <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base">
+        <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base text-justify">
           <p>
             Dengan berjalannya waktu, dunia begitu cepat berkembang. Masyarakat,
             pasar, dan negara mengalami transformasi besar-besaran. Sudah
@@ -64,7 +64,7 @@ useHead({
         <h2 class="font-semibold text-4xl md:text-5xl flex-1">
           Fokus dan Pendekatan
         </h2>
-        <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base">
+        <div class="flex-1 flex flex-col gap-4 font-light text-sm md:text-base text-justify">
           <p>
             Fokus dari Aswaja Nusantara Career Development Center adalah
             mempertemukan expert dari industri terkait dengan murid pada usia

@@ -83,12 +83,12 @@ const courses = ref([
 
 <template>
   <div class="px-6 md:px-12 py-24 md:py-12 flex flex-col gap-8">
-    <header>
+    <header class="flex flex-col gap-2 md:gap-4">
       <h2 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
         Program Kursus
       </h2>
       <p class="text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, odio.
+        Berikut program kursus yang tersedia pada LPK Aswaja Nusantara Career Development Center
       </p>
     </header>
     <section>
@@ -120,6 +120,7 @@ const courses = ref([
             <h2 class="text-[#435e65] text-2xl md:text-3xl font-bold">
               {{ course.name }}
             </h2>
+            <p class="text-lg md:text-xl font-semibold">Harga: {{ `${course.price}` }}</p>
             <p class="text-gray-600">
               Mentor:
               <span class="font-bold text-black">{{

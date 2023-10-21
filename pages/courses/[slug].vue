@@ -21,7 +21,7 @@ const courses = ref([
     name: "Dasar-Dasar Ilmu Pemasaran Digital untuk Menjadi Profesional Pemasaran Digital",
     slug: "digital-marketing",
     image:
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=2948&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2426&q=80",
     mentors: [
       {
         name: "Maisaroh, S.E., M.Si.",
@@ -64,7 +64,7 @@ const courses = ref([
     name: "Menyusun Konten Berita Digital Berdasarkan Kaidah Jurnalistik untuk Wartawan dan Kontributor Media",
     slug: "news",
     image:
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=2948&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2992&q=80",
     mentors: [
       {
         name: "Ahmad Muhlisin",
@@ -113,9 +113,9 @@ const courses = ref([
   },
   {
     name: "Menyusun dan dan membentuk budaya organisasi yang kuat untuk manajer sumber daya manusia",
-    slug: "news",
+    slug: "organization",
     image:
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=2948&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1661398825664-775c02e30173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     mentors: [
       {
         name: "Saeroni, S.Ag., S.H.",
@@ -154,7 +154,7 @@ const courses = ref([
     name: "Perancangan Basis Data dengan SQL untuk calon engineer basis data",
     slug: "database-design",
     image:
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=2948&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1554098415-788601c80aef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
     mentors: [
       {
         name: "Abdulloh Badruzzaman, S.T.,M.T.",
@@ -193,7 +193,7 @@ const courses = ref([
     name: "Merancang sistem pengelolaan limbah cair rumah tangga kawasan urban untuk insinyur sipil dan lingkungan",
     slug: "wastewater-management-system",
     image:
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=2948&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1581093196867-ca3dba3c721b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
     mentors: [
       {
         name: "Bosman Batubara, Ph.D.",
@@ -234,28 +234,38 @@ const courses = ref([
         class="flex flex-col gap-12"
         v-if="course.slug === route.params.slug"
       >
-        <header class="flex justify-end relative px-6 md:px-12 py-24 md:py-12">
+        <header class="flex justify-end relative px-6 md:px-12 pt-24 md:py-12">
           <div
-            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-zinc-50 p-8 w-7/12 font-semibold"
+            class="absolute left-4 md:left-0 top-1/2 transform -translate-y-1/3 md:-translate-y-1/2 bg-zinc-50 p-2 md:p-8 w-7/12 font-semibold"
           >
-            <h2 class="text-5xl leading-tight">{{ course.name }}</h2>
+            <h2 class="text-2xl md:text-5xl leading-tight">{{ course.name }}</h2>
           </div>
-          <figure class="h-[500px] w-2/3 self-end">
-            <img :src="course.image" alt="" class="w-full h-full object-cover" />
+          <figure class="h-[400px] md:h-[500px] w-2/3 self-end">
+            <img
+              :src="course.image"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </figure>
         </header>
         <div
-          class="bg-[#48604a] px-6 md:px-12 py-24 md:py-12 flex flex-col gap-4 items-center justify-center"
+          class="bg-[#48604a] px-6 md:px-12 py-12 flex flex-col gap-8 items-center justify-center"
         >
-          <h3 class="text-3xl md:text-3xl text-center text-white">
-            Mentor yang akan mengajar
-          </h3>
-          <div class="flex gap-8 text-white">
+          <div class="text-white text-center flex flex-col gap-2">
+            <h3 class="text-3xl md:text-3xl text-center font-semibold">
+              Mentor yang akan mengajar
+            </h3>
+            <p class="text-sm md:text-base">
+              Mentor lami memiliki pemahaman mendalam tentang materi
+              kursus dan memiliki pengalaman nyata dalam aplikasi praktisnya.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-8 text-white">
             <figcaption
               v-for="mentor in course.mentors"
               class="flex flex-col items-center"
             >
-              <div class="w-[200px] h-[200px]">
+              <div class="w-[100px] md:w-[200px] h-[100px] md:h-[200px]">
                 <img
                   :src="mentor.image || defaultImage"
                   alt=""
@@ -266,17 +276,24 @@ const courses = ref([
             </figcaption>
           </div>
         </div>
-        <div v-for="faq in course.faq" class="flex flex-col gap-4 px-6 md:px-12">
+        <div
+          v-for="faq in course.faq"
+          class="flex flex-col gap-4 px-6 md:px-12"
+        >
           <div
-            class="flex gap-4 w-2/3"
+            class="flex items-start gap-4 md:w-2/3"
             :class="faq.id === 1 ? 'self-end flex-row-reverse' : 'self-start'"
           >
-            <figure class="w-[500px]">
-              <img :src="faq.image" alt="" class="w-full h-full object-contain" />
+            <figure class="md:w-[500px] hidden md:block">
+              <img
+                :src="faq.image"
+                alt=""
+                class="w-full h-full object-contain"
+              />
             </figure>
             <div class="flex flex-col gap-4">
-              <h3 class="font-semibold text-2xl">{{ faq.question }}</h3>
-              <p class="text-gray-600 text-justify">{{ faq.answer }}</p>
+              <h3 class="font-semibold text-xl md:text-2xl">{{ faq.question }}</h3>
+              <p class="text-gray-600 text-justify text-sm md:text-base">{{ faq.answer }}</p>
             </div>
           </div>
         </div>
@@ -288,7 +305,7 @@ const courses = ref([
               Segera Bergabung <span class="font-bold border-b">Sekarang!</span>
             </h2>
             <p class="text-xs md:text-sm">
-              Dapatkan pengalaman lebih dari belajar!
+              Jadilah bagian dari kursus berkualitas kami. Daftar sekarang dan dapatkan penawaran istimewa, harga hanya Rp. 1.5 juta!
             </p>
           </header>
           <div>
