@@ -36,7 +36,7 @@ const menus = [
   },
 ];
 
-const router = useRouter()
+const router = useRouter();
 
 const isOpen = ref<boolean>(false);
 
@@ -65,12 +65,12 @@ onMounted(() => {
 
 const goTo = (route: string) => {
   if (isDown.value === true) {
-    isDown.value = false
-    router.push(route)
+    isDown.value = false;
+    router.push(route);
   } else {
-    router.push(route)
+    router.push(route);
   }
-}
+};
 const isDown = ref(false);
 
 const goDown = () => {
@@ -97,6 +97,7 @@ const goDown = () => {
             <NuxtLink
               v-if="!menu.children"
               @click="goTo(menu.url)"
+              class="cursor-pointer"
               activeClass="text-[#618264] border-b-2 border-[#618264] font-bold"
             >
               {{ menu.name }}
