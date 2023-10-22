@@ -1,8 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import proyektor from "~/assets/images/profile/facilities/proyektor.jpg";
+</script>
 
 <template>
   <div>
-    ini c
+    <figure class="h-80 md:h-[500px]">
+      <img :src="proyektor" alt="" class="w-full h-full object-cover rounded-lg">
+    </figure>
   </div>
 </template>
 

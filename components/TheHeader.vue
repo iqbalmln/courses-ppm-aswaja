@@ -22,7 +22,7 @@ const menus = [
       },
       {
         name: "Fasilitas",
-        url: "/profile/facilites",
+        url: "/profile/facilities",
       },
     ],
   },
