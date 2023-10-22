@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "Program Kursus",
+  title: "LPK Aswaja Nusantara - Program Kursus",
 });
 const courses = ref([
   {

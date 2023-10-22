@@ -15,6 +15,10 @@ import man from "~/assets/images/courses/man-work.png";
 import woman from "~/assets/images/courses/women.png";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
+useHead({
+  title: "LPK Aswaja Nusantara - Program Kursus",
+});
+
 const route = useRoute();
 const courses = ref([
   {

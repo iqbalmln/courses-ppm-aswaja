@@ -13,7 +13,7 @@ import farid from "~/assets/images/mentors/farid.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 useHead({
-  title: `Mentor - Detail`,
+  title: `LPK Aswaja Nusantara - Mentor`,
 });
 
 const route = useRoute();

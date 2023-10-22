@@ -6,7 +6,7 @@ definePageMeta({
   layout: "home",
 });
 useHead({
-  title: "Beranda",
+  title: "LPK Aswaja Nusantara - Beranda",
 });
 
 const courses = ref([

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "Sejarah",
+  title: "LPK Aswaja Nusantara - Sejarah",
 });
 </script>
 

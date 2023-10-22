@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Organisasi',
+  title: 'LPK Aswaja Nusantara - Organisasi',
 })
 </script>
 

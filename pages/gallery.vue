@@ -21,7 +21,7 @@ import sustainableBusiness from "~/assets/images/blog/sustainable-business.jpg"
 import madrasahRiset from "~/assets/images/blog/madrasah-riset.jpeg"
 
 useHead({
-  title: 'Blog dan Galeri',
+  title: 'LPK Aswaja Nusantara - Blog dan Galeri',
 })
 
 const galleries = reactive([

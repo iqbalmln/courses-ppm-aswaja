@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'LPK Aswaja Nusantara - Fasilitas',
+})
+</script>
 
 <template>
   <div class="py-24 md:py-12 md:pt-0 px-6 md:px-12 flex flex-col gap-8">
