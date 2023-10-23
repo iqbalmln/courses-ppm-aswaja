@@ -656,29 +656,29 @@ const mentors = [
 
 <template>
   <div class="px-6 md:px-12 py-24 md:py-12">
-    <h2 class="text-green-aswaja text-5xl font-bold mb-4">
+    <h2 class="text-green-aswaja text-3xl md:text-5xl font-bold mb-4">
       Detail Profil Mentor
     </h2>
     <section
       v-for="mentor in mentors"
       v-show="mentor.slug === route.params.slug"
-      class="flex justify-between gap-12"
+      class="flex flex-col-reverse md:flex-row justify-between gap-12"
     >
       <div class="flex-1 flex flex-col gap-4">
         <div>
           <p class="font-bold">Nama:</p>
-          <h1 class="text-gray-600">{{ mentor.name }}</h1>
+          <h1 class="text-gray-600 text-sm md:text-base">{{ mentor.name }}</h1>
         </div>
         <div v-if="mentor.slug !== 'achmad-musyaddad'">
           <p class="font-bold">Profil Singkat:</p>
-          <p class="text-gray-600">{{ mentor.profile }}</p>
+          <p class="text-gray-600 text-sm md:text-base">{{ mentor.profile }}</p>
         </div>
         <div>
           <p class="font-bold pb-1">Pengalaman:</p>
           <ul class="pl-4 flex flex-col gap-2">
             <li
               v-for="exp in mentor.experience"
-              class="list-disc text-gray-600"
+              class="list-disc text-gray-600 text-sm md:text-base"
             >
               <p>{{ exp.year }}</p>
               <p>{{ exp.job }}</p>
@@ -688,7 +688,7 @@ const mentors = [
         <div v-show="mentor.education.length > 0">
           <p class="font-bold pb-1">Edukasi:</p>
           <ul class="pl-4 flex flex-col gap-2">
-            <li v-for="ed in mentor.education" class="list-disc text-gray-600">
+            <li v-for="ed in mentor.education" class="list-disc text-gray-600 text-sm md:text-base">
               <p>{{ ed.university }}</p>
               <p>{{ ed.major }}</p>
             </li>
@@ -699,7 +699,7 @@ const mentors = [
           <ul class="pl-4 flex flex-col gap-2">
             <li
               v-for="porto in mentor.portfolio"
-              class="list-disc text-gray-600"
+              class="list-disc text-gray-600 text-sm md:text-base"
             >
               <p>{{ porto.project }}</p>
               <p>{{ porto.position }}</p>
@@ -711,7 +711,7 @@ const mentors = [
           <ul class="pl-4 flex flex-col gap-2">
             <li
               v-for="publication in mentor.publications"
-              class="list-disc text-gray-600"
+              class="list-disc text-gray-600 text-sm md:text-base"
             >
               <p>{{ publication.title }}</p>
             </li>
@@ -719,7 +719,7 @@ const mentors = [
         </div>
       </div>
       <figure
-        class="w-[500px] h-[500px] border-2 border-green-aswaja rounded-xl"
+        class="w-[350px ]md:w-[500px] h-[350px] md:h-[500px] border-2 border-green-aswaja rounded-xl"
       >
         <img
           :src="mentor.photo || defaultImage"

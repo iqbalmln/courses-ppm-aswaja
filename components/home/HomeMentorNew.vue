@@ -191,7 +191,7 @@ const showMore = () => {
       <div v-for="mentor in visibleMentors">
         <NuxtLink
           :to="'/mentor/' + mentor.slug"
-          class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[320px] md:h-[500px]"
+          class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[480px] md:h-[500px]"
         >
           <figure class="relative w-full h-[320px]">
             <img
