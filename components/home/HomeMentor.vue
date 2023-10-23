@@ -48,6 +48,7 @@ const profiles = ref([
     icon: "ph:mosque-bold",
     active: false,
   },
+
 ]);
 
 const currentMentor = shallowRef(mentors.mentorA);
@@ -83,7 +84,7 @@ const toggleActive = (selectedProfile: {
 
 <template>
   <div class="flex flex-col items-center gap-8 justify-between">
-    <div class="flex gap-2 md:gap-6 mentorMenu justify-center overflow-x-scroll w-full pb-4">
+    <div class="flex gap-2 md:gap-6 mentorMenu justify-center overflow-scroll w-full pb-4">
       <div
         v-for="(profile, index) in profiles"
         class="flex items-center justify-center md:justify-start gap-4 drop-shadow-md px-2 md:px-4 py-1 md:py-2 rounded-full cursor-pointer transition-all ease-in duration-100"
@@ -93,7 +94,7 @@ const toggleActive = (selectedProfile: {
           goToProfile(index);
         "
       >
-        <figure class="">
+        <figure class="hidden md:block">
           <Icon :name="profile.icon" />
         </figure>
         <div class="text-center md:text-left">
