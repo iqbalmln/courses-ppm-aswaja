@@ -10,6 +10,8 @@ import pusvyta from "~/assets/images/mentors/pusvyta.jpg";
 import saeroni from "~/assets/images/mentors/saeroni.jpg";
 import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg";
 import farid from "~/assets/images/mentors/farid.jpg";
+import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
+import ulya from "~/assets/images/mentors/ulya.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 useHead({
@@ -18,14 +20,12 @@ useHead({
 
 const route = useRoute();
 
-
 const mentors = [
   {
     name: "Abdulloh Badruzzaman, S.T.,M.T.",
     photo: abdulloh,
     slug: "abdulloh-badruzzaman",
-    profile:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit laoreet ipsum, in viverra massa venenatis at. Nam quis sodales arcu. Maecenas dignissim tincidunt leo sed tempus. Phasellus viverra lectus vitae elit mattis iaculis. Proin tincidunt felis condimentum nisi tristique, faucibus ultrices libero mollis. Curabitur ultricies condimentum lacus, eleifend facilisis tortor. Integer orci orci, accumsan malesuada diam vitae, commodo venenatis mauris. Ut dictum augue eget ex rutrum, nec consequat dolor condimentum.",
+    profile: "Berprofesi sebagai Dosen Informatika di UNU Yogyakarta.",
     experience: [
       {
         year: "2017 - sampai sekarang",
@@ -213,7 +213,7 @@ const mentors = [
     name: "Fadmi Rina, S.Kom., M.Kom.",
     photo: fadmi,
     slug: "fadmi-rina",
-    profile: `lorem50Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam voluptatum nisi laudantium ducimus. Esse architecto quasi totam, eveniet voluptatum reiciendis minima recusandae laboriosam fugit officia? Nisi, cum consequatur.`,
+    profile: "Berprofesi sebagai Dosen Informatika di UNU Yogyakarta.",
     experience: [
       {
         year: "2020 - 2022",
@@ -300,9 +300,9 @@ const mentors = [
   },
   {
     name: "Mar'atul Uliyah, S.Pd.",
-    photo: undefined,
+    photo: ulya,
     slug: "maratul-uliyah",
-    profile: "lorem ipsum dolor sit amet consectur",
+    profile: "Berprofesi sebagai Pemimpin Redaksi Majalah Suluh, FPUB",
     experience: [
       {
         year: "",
@@ -356,7 +356,7 @@ const mentors = [
     name: "Mustaghfiroh Rahayu, S.Th.I., M.A.",
     photo: mustaghfiroh,
     slug: "mustaghfiroh-rahayu",
-    profile: "lorem ipsum dolor sit amet consectur",
+    profile: "Berprofesi sebagai Dosen Sosiologi UGM",
     experience: [
       {
         year: "August 2014 –  Dec 2022",
@@ -413,7 +413,8 @@ const mentors = [
     name: "Pusvyta Sari, S.Pd., M.Pd.",
     photo: pusvyta,
     slug: "pusvyta-sari",
-    profile: "lorem ipsum dolor sit amet consectur",
+    profile:
+      "Beprofesi sebagai Dosen Manajemen Pendidikan Islam Institut Pesantren Sunan Drajad Lamongan.",
     experience: [
       {
         year: "2014 –  Sampai sekarang",
@@ -460,7 +461,7 @@ const mentors = [
     name: "Saeroni, S.Ag., M.H.",
     photo: saeroni,
     slug: "saeroni",
-    profile: "lorem ipsum dolor sit amet consectur",
+    profile: "Asosiate Researcher Adi Rifqi Annisa Yogyakarta.",
     experience: [
       {
         year: "2020 –  Sampai sekarang",
@@ -562,6 +563,53 @@ const mentors = [
     ],
   },
   {
+    name: "Maisaroh, S.E., M.Si.",
+    photo: maisaroh,
+    slug: "maisaroh",
+    profile:
+      "Berprofesi sebagai Dosen Program Studi Bisnis Digital Program Sarjana Terapan Fakultas Bisnis dan Ekonomika Universitas Islam Indonesia",
+    experience: [
+      {
+        year: "",
+        job: "Dosen Program Studi Bisnis Digital Universitas Islam Indonesia",
+      },
+    ],
+    education: [
+      {
+        university: "Unversitas Sebelas Maret",
+        major: "Mahasiswa Program Doktor Ilmu Ekonomi Fakultas Ekonomi",
+      },
+      {
+        university: "Universitas Gadjah Mada Yogyakarta",
+        major:
+          "Magister Sains Program, Jurusan Ilmu-Ilmu Sosial, Program Study Manajemen",
+      },
+      {
+        university: "Universitas Muhammadiyah Yogyakarta",
+        major: "Fakultas Ekonomi, Jurusan Manajemen",
+      },
+    ],
+    portfolio: [],
+    publications: [
+      {
+        title:
+          "Analisis Faktor-Faktor Penentu Kesuksesan Pendidikan Entrepreneurship ( sebagai ketua tim mandiri), Jurnal Econosains FE UNJ, 2009",
+      },
+      {
+        title:
+          "Peningkatan Hasil Belajar Siswa Dengan Menggunakan Metode Pembelajaran Active Learning Tipe Quiz Team Pada Mata Pelajaran Ketrampilan Dasar Komunikasi di SMK 1 Bogor, Jurnal Ekonomi dan Pendidikan FISE UNY, 2011",
+      },
+      {
+        title:
+          "Hubungan antara Persepsi Pengelola Akademik Tentang Total Quality Management (TQM) dengan Pengintegrasiannya Dalam Kurikulum Pendidikan Tinggi UNJ, Jurnal Ekonomi dan Pendidikan FISE UNY, 2011",
+      },
+      {
+        title:
+          "Tantangan dan Peluang Perbankan Syariah Dalam Pengembangan Usaha Kecil dan Menengah Untuk Memperkuat Kesejahteraan Umat, Jurnal Econosains FE UNJ, 2011",
+      },
+    ],
+  },
+  {
     name: "Farid Assifa, S.Fil.",
     photo: farid,
     slug: "farid-assifa",
@@ -608,7 +656,9 @@ const mentors = [
 
 <template>
   <div class="px-6 md:px-12 py-24 md:py-12">
-    <h2 class="text-green-aswaja text-5xl font-bold mb-4">Detail Profil Mentor</h2>
+    <h2 class="text-green-aswaja text-5xl font-bold mb-4">
+      Detail Profil Mentor
+    </h2>
     <section
       v-for="mentor in mentors"
       v-show="mentor.slug === route.params.slug"
@@ -619,7 +669,7 @@ const mentors = [
           <p class="font-bold">Nama:</p>
           <h1 class="text-gray-600">{{ mentor.name }}</h1>
         </div>
-        <div>
+        <div v-if="mentor.slug !== 'achmad-musyaddad'">
           <p class="font-bold">Profil Singkat:</p>
           <p class="text-gray-600">{{ mentor.profile }}</p>
         </div>

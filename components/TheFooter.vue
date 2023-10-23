@@ -28,25 +28,30 @@
       </ul>
       <ul class="flex flex-col gap-3 text-sm items-start md:w-4/12 lg:w-5/12">
         <li class="uppercase font-bold text-base lg:text-xl">Kontak Kami</li>
-        <li class="text-sm underline">+62 8156 866 002</li>
+        <li class="text-sm underline">+6282245511083</li>
         <li class="text-sm">
-          Jl. Masjid Patok Negoro, Mlangi, Nogotirto, Kec. Gamping, Kabupaten
-          Sleman, Daerah Istimewa Yogyakarta 55592
+          Jl Santri No. 2, Mlangi RT/RW 2/32, Nogotirto, Gamping, Sleman, Daerah Istimewa Yogyakarta
         </li>
       </ul>
       <ul class="flex flex-col gap-3 text-sm items-start lg:w-3/12">
         <li class="uppercase font-bold text-base lg:text-xl">Ikuti Kami</li>
         <li class="text-sm">
-          <Icon name="ph:facebook-logo" size="1rem" />
-          Facebook
+          <NuxtLink to="https://www.facebook.com/ponpes.aswaja.nusantara?locale=id_ID&_rdc=1&_rdr" target="_blank">
+            <Icon name="ph:facebook-logo" size="1rem" />
+            Facebook
+          </NuxtLink>
         </li>
         <li class="text-sm">
-          <Icon name="ph:instagram-logo" size="1rem" />
-          Instagram
+          <NuxtLink to="https://www.instagram.com/aswaja_nusantara/" target="_blank">
+            <Icon name="ph:instagram-logo" size="1rem" />
+            Instagram
+          </NuxtLink>
         </li>
         <li class="text-sm">
-          <Icon name="ph:youtube-logo" size="1rem" />
-          Youtube
+          <NuxtLink to="https://www.youtube.com/@ppmaswajanusantara1070" target="_blank">
+            <Icon name="ph:youtube-logo" size="1rem" />
+            Youtube
+          </NuxtLink>
         </li>
       </ul>
     </section>

@@ -10,12 +10,15 @@ import pusvyta from "~/assets/images/mentors/pusvyta.jpg";
 import saeroni from "~/assets/images/mentors/saeroni.jpg";
 import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg";
 import farid from "~/assets/images/mentors/farid.jpg";
+import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
+import ulya from "~/assets/images/mentors/ulya.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 const mentors = [
   {
     photo: abdulloh,
     name: "Abdulloh Badruzzaman, S.T.,M.T.",
+    job: "Dosen Prodi Informatika UNU Yogyakarta",
     focus: [
       "Pengembangan Web",
       "Pengembangan Apps Seluler",
@@ -27,6 +30,7 @@ const mentors = [
   {
     photo: muhsin,
     name: "Ahmad Muhlisin",
+    job: "Redaktur Berita Betanews.id",
     focus: ["Jurnalistik"],
     link: "#",
     slug: "ahmad-muhlisin",
@@ -34,6 +38,7 @@ const mentors = [
   {
     photo: anif,
     name: "Anif Faizi",
+    job: "Digital Business Betanews.id",
     focus: [
       "Manajemen Penjualan dan pemasaran",
       "spesialis pemasaran digital",
@@ -45,6 +50,7 @@ const mentors = [
   {
     photo: bosman,
     name: "Bosman Batubara, Ph.D.",
+    job: "Postdoctoral researcher at Human Geography and Spatial Planning Department, Utrecht University",
     focus: ["Keteknikan Sipil", "Keteknikan Lingkungan"],
     link: "#",
     slug: "bosman-batubara",
@@ -52,6 +58,7 @@ const mentors = [
   {
     photo: fadmi,
     name: "Fadmi Rina, S.Kom., M.Kom.",
+    job: "Asisten Ahli Universitas Nahdlatul Ulama Yogyakarta",
     focus: [
       "Pengembangan Web",
       "Pengembangan Apps Seluler",
@@ -63,13 +70,15 @@ const mentors = [
   {
     photo: harsa,
     name: "Harsa Permata, M.Phil.",
+    job: "Teaching Staff, at Islamic University of Indonesia, Boarding School",
     focus: ["Jurnalistik", "Public Relation"],
     link: "https://www.linkedin.com/in/harsa-permata-041a8272/",
     slug: "harsa-permata",
   },
   {
-    photo: undefined,
+    photo: maisaroh,
     name: "Maisaroh, S.E., M.Si.",
+    job: "Dosen Program Studi Bisnis Digital Universitas Islam Indonesia",
     focus: [
       "Manajemen Penjualan dan pemasaran",
       "Manajemen logistik, distribusi, dan halterkait",
@@ -80,8 +89,9 @@ const mentors = [
     slug: "maisaroh",
   },
   {
-    photo: undefined,
+    photo: ulya,
     name: "Mar'atul Uliyah, S.Pd.",
+    job: "Pemimpin Redaksi Majalah Suluh, FPUB",
     focus: ["Jurnalistik"],
     link: "#",
     slug: "maratul-uliyah",
@@ -89,6 +99,7 @@ const mentors = [
   {
     photo: mustaghfiroh,
     name: "Mustaghfiroh Rahayu, S.Th.I., M.A.",
+    job: "Dosen Jurusan Sosiologi Universitas Gadjah Mada",
     focus: ["Manejemen Sumber Daya Manusia", "spesialis pemasaran digital"],
     link: "https://www.linkedin.com/in/mustaghfiroh-rahayu-9a69ba214/",
     slug: "mustaghfiroh-rahayu",
@@ -96,6 +107,7 @@ const mentors = [
   {
     photo: pusvyta,
     name: "Pusvyta Sari, S.Pd., M.Pd.",
+    job: "Kaprodi Komunikasi dan Penyiaran Islam Institut Pesantren Sunan Drajat",
     focus: [
       "Profesional Periklanan dan Pemasaran",
       "Manejemen Sumber Daya Manusia",
@@ -107,6 +119,7 @@ const mentors = [
   {
     photo: saeroni,
     name: "Saeroni, S.Ag., M.H.",
+    job: "Sekretaris Yayasan Bumi Aswaja Yogyakarta, pendiri dan pengelola SMP, SMA dan Pesantren Bumi Cendekia",
     focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
     slug: "saeroni",
@@ -114,6 +127,7 @@ const mentors = [
   {
     photo: mursyaddad,
     name: "Achmad Musyaddad, S.I.P.",
+    job: "Direktur, Yayasan Sanggar Inovasi Desa",
     focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
     slug: "achmad-musyaddad",
@@ -121,6 +135,7 @@ const mentors = [
   {
     photo: farid,
     name: "Farid Assifa, S.Fil.",
+    job: "Editor, KOMPAS.COM",
     focus: ["Jurnalistik"],
     link: "https://www.linkedin.com/in/farid-assifa-90112645/",
     slug: "farid-assifa",
@@ -176,9 +191,9 @@ const showMore = () => {
       <div v-for="mentor in visibleMentors">
         <NuxtLink
           :to="'/mentor/' + mentor.slug"
-          class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[320px] md:h-[350px]"
+          class="w-full flex flex-col gap-2 drop-shadow-lg rounded p-2 bg-white hover:transform hover:scale-105 transition-all duration-300 ease-out h-[320px] md:h-[500px]"
         >
-          <figure class="relative w-full h-[200px]">
+          <figure class="relative w-full h-[320px]">
             <img
               :src="mentor.photo || defaultImage"
               class="rounded w-full h-full object-cover"
@@ -200,7 +215,10 @@ const showMore = () => {
               {{ focus }}
             </p>
           </div>
-          <p class="text-sm font-semibold">{{ mentor.name }}</p>
+          <div>
+            <p class="text-sm font-semibold">{{ mentor.name }}</p>
+            <span class="text-xs leading-snug">{{ mentor.job }}</span>
+          </div>
         </NuxtLink>
       </div>
     </section>

@@ -10,6 +10,8 @@ import pusvyta from "~/assets/images/mentors/pusvyta.jpg";
 import saeroni from "~/assets/images/mentors/saeroni.jpg";
 import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg";
 import farid from "~/assets/images/mentors/farid.jpg";
+import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
+import ulya from "~/assets/images/mentors/ulya.jpg";
 import discuss from "~/assets/images/courses/man-hp.png";
 import man from "~/assets/images/courses/man-work.png";
 import woman from "~/assets/images/courses/women.png";
@@ -29,7 +31,7 @@ const courses = ref([
     mentors: [
       {
         name: "Maisaroh, S.E., M.Si.",
-        image: undefined,
+        image: maisaroh,
       },
       {
         name: "Mustaghfiroh Rahayu, S.Th.I., M.A.",
@@ -88,7 +90,7 @@ const courses = ref([
       },
       {
         name: "Maratul Auliya",
-        image: undefined,
+        image: ulya,
       },
     ],
     faq: [
@@ -288,7 +290,7 @@ const courses = ref([
             class="flex items-start gap-4 md:w-2/3"
             :class="faq.id === 1 ? 'self-end flex-row-reverse' : 'self-start'"
           >
-            <figure class="md:w-[500px] hidden md:block">
+            <figure class="md:w-[300px] hidden md:block">
               <img
                 :src="faq.image"
                 alt=""
