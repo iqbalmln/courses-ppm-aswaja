@@ -12,6 +12,8 @@ import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg";
 import farid from "~/assets/images/mentors/farid.jpg";
 import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
 import ulya from "~/assets/images/mentors/ulya.jpg";
+import suwoko from "~/assets/images/mentors/suwoko.png";
+import anis from "~/assets/images/mentors/anis.png";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 useHead({
@@ -72,6 +74,8 @@ const mentors = [
         position: "Programmer",
       },
     ],
+    publications: [],
+    award: [],
   },
   {
     name: "Ahmad Muhlisin",
@@ -98,6 +102,8 @@ const mentors = [
       },
     ],
     education: [],
+    publications: [],
+    award: [],
     portfolio: [
       {
         project:
@@ -148,6 +154,8 @@ const mentors = [
         major: "",
       },
     ],
+    publications: [],
+    award: [],
     portfolio: [
       {
         project:
@@ -195,6 +203,7 @@ const mentors = [
       },
     ],
     portfolio: [],
+    award: [],
     publications: [
       {
         title:
@@ -247,6 +256,8 @@ const mentors = [
         position: "Anggota",
       },
     ],
+    publications: [],
+    award: [],
   },
   {
     name: "Harsa Permata, M.Phil.",
@@ -287,6 +298,7 @@ const mentors = [
       },
     ],
     portfolio: [],
+    award: [],
     publications: [
       {
         title:
@@ -351,6 +363,8 @@ const mentors = [
         position: "",
       },
     ],
+    publications: [],
+    award: [],
   },
   {
     name: "Mustaghfiroh Rahayu, S.Th.I., M.A.",
@@ -394,6 +408,7 @@ const mentors = [
       },
     ],
     portfolio: [],
+    award: [],
     publications: [
       {
         title:
@@ -456,6 +471,8 @@ const mentors = [
         position: "",
       },
     ],
+    publications: [],
+    award: [],
   },
   {
     name: "Saeroni, S.Ag., M.H.",
@@ -491,6 +508,7 @@ const mentors = [
       },
     ],
     portfolio: [],
+    award: [],
     publications: [
       {
         title:
@@ -561,6 +579,8 @@ const mentors = [
         position: "Konsultan",
       },
     ],
+    publications: [],
+    award: [],
   },
   {
     name: "Maisaroh, S.E., M.Si.",
@@ -608,6 +628,7 @@ const mentors = [
           "Tantangan dan Peluang Perbankan Syariah Dalam Pengembangan Usaha Kecil dan Menengah Untuk Memperkuat Kesejahteraan Umat, Jurnal Econosains FE UNJ, 2011",
       },
     ],
+    award: [],
   },
   {
     name: "Farid Assifa, S.Fil.",
@@ -636,6 +657,7 @@ const mentors = [
       },
     ],
     portfolio: [],
+    award: [],
     publications: [
       {
         title:
@@ -650,6 +672,79 @@ const mentors = [
           "Skripsi, “Pendidikan Sebagai Ruang Publik dalam Perspektif Teori Kritis Jurgen Habermas”, 2005, unpublished.",
       },
     ],
+  },
+  {
+    name: "Suwoko",
+    photo: suwoko,
+    slug: "suwoko",
+    profile: "Berprofesi sebagai Founder Beta Media, (betanews.id)",
+    experience: [
+      {
+        year: "2020 - Sampai Sekarang",
+        job: "Founder Beta Media (betanews.id)",
+      },
+      {
+        year: "2013 - 2015",
+        job: "Editor Koran Muria/MuriaNews.com",
+      },
+      {
+        year: "2011 - 2013",
+        job: "Reporter Warta Jateng/Tribun Jateng",
+      },
+    ],
+    education: [
+      {
+        university: "Universitas Muria Kudus",
+        major: "FKIP BI T",
+      },
+      {
+        university: "Ponpes Raudlatul Muta’allimin, Kudus",
+        major: "",
+      },
+      {
+        university: "MAN 2 Kudus",
+        major: "",
+      },
+    ],
+    portfolio: [],
+    publications: [],
+    award: [
+      {
+        title: "Peraih Beasiswa Liputan anti-Korupsi AJI Jakarta tahun 2012",
+      },
+      {
+        title: "Pemenang Karya Jurnalistik Anggaran AJI Yogyakarta tahun 2012",
+      },
+      {
+        title:
+          "Pemenang Penulisan Artikel antar-Jurnalis se-Jateng UMK tahun 2014",
+      },
+    ],
+  },
+  {
+    name: "Anis Susila Abadi, S.T., M.Kom.",
+    photo: anis,
+    slug: "anis-susila",
+    profile:
+      "Berprofesi sebagai Dosen di Universitas Nahdlatul Ulama Yogyakarta",
+    experience: [
+      {
+        year: "2023 - Sampai Sekarang",
+        job: "Direktur Aset dan Infrastruktur, UNU Yogyakarta",
+      },
+      {
+        year: "2022 - 2023",
+        job: "Direktur Kemahasiswaan, UNU Yogyakarta",
+      },
+      {
+        year: "2020 - 2022",
+        job: "Wakil Dekan Fakultas Teknologi Informasi, UNU Yogyakarta",
+      },
+    ],
+    education: [],
+    portfolio: [],
+    publications: [],
+    award: [],
   },
 ];
 </script>
@@ -673,7 +768,7 @@ const mentors = [
           <p class="font-bold">Profil Singkat:</p>
           <p class="text-gray-600 text-sm md:text-base">{{ mentor.profile }}</p>
         </div>
-        <div>
+        <div v-show="mentor.experience.length > 0">
           <p class="font-bold pb-1">Pengalaman:</p>
           <ul class="pl-4 flex flex-col gap-2">
             <li
@@ -688,7 +783,10 @@ const mentors = [
         <div v-show="mentor.education.length > 0">
           <p class="font-bold pb-1">Edukasi:</p>
           <ul class="pl-4 flex flex-col gap-2">
-            <li v-for="ed in mentor.education" class="list-disc text-gray-600 text-sm md:text-base">
+            <li
+              v-for="ed in mentor.education"
+              class="list-disc text-gray-600 text-sm md:text-base"
+            >
               <p>{{ ed.university }}</p>
               <p>{{ ed.major }}</p>
             </li>
@@ -706,7 +804,7 @@ const mentors = [
             </li>
           </ul>
         </div>
-        <div v-show="mentor.publications">
+        <div v-show="mentor.publications.length > 0">
           <p class="font-bold pb-1">Publikasi:</p>
           <ul class="pl-4 flex flex-col gap-2">
             <li
@@ -714,6 +812,17 @@ const mentors = [
               class="list-disc text-gray-600 text-sm md:text-base"
             >
               <p>{{ publication.title }}</p>
+            </li>
+          </ul>
+        </div>
+        <div v-show="mentor.award.length > 0">
+          <p class="font-bold pb-1">Penghargaan:</p>
+          <ul class="pl-4 flex flex-col gap-2">
+            <li
+              v-for="award in mentor.award"
+              class="list-disc text-gray-600 text-sm md:text-base"
+            >
+              <p>{{ award.title }}</p>
             </li>
           </ul>
         </div>

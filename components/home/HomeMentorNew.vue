@@ -12,6 +12,8 @@ import mursyaddad from "~/assets/images/mentors/mursyaddad.jpg";
 import farid from "~/assets/images/mentors/farid.jpg";
 import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
 import ulya from "~/assets/images/mentors/ulya.jpg";
+import suwoko from "~/assets/images/mentors/suwoko.png";
+import anis from "~/assets/images/mentors/anis.png";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 const mentors = [
@@ -140,6 +142,26 @@ const mentors = [
     link: "https://www.linkedin.com/in/farid-assifa-90112645/",
     slug: "farid-assifa",
   },
+  {
+    photo: suwoko,
+    name: "Suwoko S.Pd.",
+    job: "Founder Beta Media, (betanews.id)",
+    focus: ["Jurnalistik"],
+    link: "#",
+    slug: "suwoko",
+  },
+  {
+    photo: anis,
+    name: "Anis Susila Abadi, S.T., M.Kom.",
+    job: "Dosen, Universitas Nahdlatul Ulama Yogyakarta",
+    focus: [
+      "Pengembangan Web",
+      "Pengembangan Apps Seluler",
+      "Desainer Basis Data",
+    ],
+    link: "#",
+    slug: "anis-susila",
+  },
 ];
 const tagClass = (focus: string) => {
   return focus === "Pengembangan Web"
@@ -179,7 +201,7 @@ const showMore = () => {
     ...visibleMentors.value,
     ...mentors.slice(
       visibleMentors.value.length,
-      visibleMentors.value.length + 9
+      visibleMentors.value.length + 11
     ),
   ];
 };
@@ -222,6 +244,10 @@ const showMore = () => {
         </NuxtLink>
       </div>
     </section>
-    <BaseTheButton @click="showMore" title="Lihat Semua Mentor" variant="outlined" />
+    <BaseTheButton
+      @click="showMore"
+      title="Lihat Semua Mentor"
+      variant="outlined"
+    />
   </div>
 </template>
