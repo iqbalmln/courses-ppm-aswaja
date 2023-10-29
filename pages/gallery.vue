@@ -1,30 +1,38 @@
 <script setup lang="ts">
-import cryptocurrency from "~/assets/images/blog/cryptocurrency.jpg"
-import coffee from "~/assets/images/blog/coffee.jpg"
-import webinar from "~/assets/images/blog/webinar.jpg"
-import study from "~/assets/images/blog/study.jpg"
-import crypto from "~/assets/images/blog/crypto.jpg"
-import digitalization from "~/assets/images/blog/digitalization.jpg"
-import khalaqoh from "~/assets/images/blog/khalaqoh.jpg"
-import opinionLeader from "~/assets/images/blog/opinion-leader.jpg"
-import coffeeAndOrange from "~/assets/images/blog/coffee-and-orange.jpg"
-import socialMediaCommunication from "~/assets/images/blog/social-media-communication.jpg"
-import communicationCollaboration from "~/assets/images/blog/communication-collaboration.jpg"
-import startupGeneration from "~/assets/images/blog/startup-generation.jpg"
-import gamification from "~/assets/images/blog/gamification.jpg"
-import digitalRoom from "~/assets/images/blog/digital-room.jpg"
-import digitalZone from "~/assets/images/blog/digital-zone.jpg"
-import academyCommunity from "~/assets/images/blog/academy-community.jpg"
-import wiseThinking from "~/assets/images/blog/wise-thinking.jpg"
-import internetAddiction from "~/assets/images/blog/internet-addiction.jpg"
-import sustainableBusiness from "~/assets/images/blog/sustainable-business.jpg"
-import madrasahRiset from "~/assets/images/blog/madrasah-riset.jpeg"
+import cryptocurrency from "~/assets/images/blog/cryptocurrency.jpg";
+import coffee from "~/assets/images/blog/coffee.jpg";
+import webinar from "~/assets/images/blog/webinar.jpg";
+import study from "~/assets/images/blog/study.jpg";
+import crypto from "~/assets/images/blog/crypto.jpg";
+import digitalization from "~/assets/images/blog/digitalization.jpg";
+import khalaqoh from "~/assets/images/blog/khalaqoh.jpg";
+import opinionLeader from "~/assets/images/blog/opinion-leader.jpg";
+import coffeeAndOrange from "~/assets/images/blog/coffee-and-orange.jpg";
+import socialMediaCommunication from "~/assets/images/blog/social-media-communication.jpg";
+import communicationCollaboration from "~/assets/images/blog/communication-collaboration.jpg";
+import startupGeneration from "~/assets/images/blog/startup-generation.jpg";
+import gamification from "~/assets/images/blog/gamification.jpg";
+import digitalRoom from "~/assets/images/blog/digital-room.jpg";
+import digitalZone from "~/assets/images/blog/digital-zone.jpg";
+import academyCommunity from "~/assets/images/blog/academy-community.jpg";
+import wiseThinking from "~/assets/images/blog/wise-thinking.jpg";
+import internetAddiction from "~/assets/images/blog/internet-addiction.jpg";
+import sustainableBusiness from "~/assets/images/blog/sustainable-business.jpg";
+import startup from "~/assets/images/blog/startup.png";
+import madrasahRiset from "~/assets/images/blog/madrasah-riset.jpeg";
 
 useHead({
-  title: 'LPK Aswaja Nusantara - Blog dan Galeri',
-})
+  title: "LPK Aswaja Nusantara - Blog dan Galeri",
+});
 
 const galleries = reactive([
+  {
+    image: startup,
+    title: "Seminar Gerakan 1000 Startup",
+    description:
+      "Gerakan Nasional 1000 Startup Digital bekerja sama dengan PPM Aswaja Nusantara adalah inisiatif yang menyediakan seminar, workshop daring, Hacksprint, Bootcamp, dan program inkubasi untuk mendukung para calon founder startup khususnya masyarakat santri di Indonesia. Dengan tujuan memberikan pembekalan kewirausahaan, pengembangan keterampilan, dan bimbingan mendalam, program ini mencakup 17 hub di 34 provinsi untuk mendukung 40 startup terpilih selama 3 bulan.",
+    date: "Sabtu, 21 Oktober 2023",
+  },
   {
     image: cryptocurrency,
     title: "Pengenalan Cryptocurrency",
@@ -183,7 +191,9 @@ const hideDetail = () => {
 </script>
 
 <template>
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-24 md:py-12 px-6 md:px-12">
+  <div
+    class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-24 md:py-12 px-6 md:px-12"
+  >
     <div v-for="(item, index) in galleries" :key="index">
       <figure
         class="card cursor-pointer p-2.5 border w-full h-[250px]"
@@ -198,21 +208,42 @@ const hideDetail = () => {
     </div>
     <transition name="fade" mode="out-in">
       <div v-if="isModalVisible" class="modal">
-        <div class="modal-content flex flex-col lg:flex-row w-[80%] lg:w-[60%] p-8 md:p-5">
-          <Icon name="ph:x-bold" class="cursor-pointer close text-xl" @click="hideDetail" />
-          <img :src="selectedItem.image" alt="Detail Image" height="300" class="object-cover w-[300px]" />
+        <div
+          class="modal-content flex flex-col lg:flex-row w-[80%] lg:w-[60%] p-8 md:p-5"
+        >
+          <Icon
+            name="ph:x-bold"
+            class="cursor-pointer close text-xl"
+            @click="hideDetail"
+          />
+          <img
+            :src="selectedItem.image"
+            alt="Detail Image"
+            height="300"
+            class="object-cover w-[300px]"
+          />
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-1 md:gap-2">
               <h3 class="font-semibold text-base md:text-xl">Judul Kegiatan</h3>
-              <h3 class="text-gray-600 text-sm md:text-base">{{ selectedItem.title }}</h3>
+              <h3 class="text-gray-600 text-sm md:text-base">
+                {{ selectedItem.title }}
+              </h3>
             </div>
             <div class="flex flex-col gap-1 md:gap-2">
-              <h3 class="font-semibold text-base md:text-xl">Tanggal Kegiatan</h3>
-              <h3 class="text-xs md:text-sm text-gray-600">{{ selectedItem.date }}</h3>
+              <h3 class="font-semibold text-base md:text-xl">
+                Tanggal Kegiatan
+              </h3>
+              <h3 class="text-xs md:text-sm text-gray-600">
+                {{ selectedItem.date }}
+              </h3>
             </div>
             <div class="flex flex-col gap-1 md:gap-2">
-              <h3 class="font-semibold text-base md:text-xl">Deskripsi Kegiatan</h3>
-              <p class="text-xs md:text-sm text-gray-600">{{ selectedItem.description }}</p>
+              <h3 class="font-semibold text-base md:text-xl">
+                Deskripsi Kegiatan
+              </h3>
+              <p class="text-xs md:text-sm text-gray-600">
+                {{ selectedItem.description }}
+              </p>
             </div>
           </div>
         </div>
@@ -222,7 +253,6 @@ const hideDetail = () => {
 </template>
 
 <style scoped>
-
 .modal {
   position: fixed;
   z-index: 99;

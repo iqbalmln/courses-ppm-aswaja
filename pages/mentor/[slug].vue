@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import abdulloh from "~/assets/images/mentors/abdulloh.jpeg";
 import muhsin from "~/assets/images/mentors/muhsin.jpg";
-import bosman from "~/assets/images/mentors/bosman.jpeg";
 import anif from "~/assets/images/mentors/anif.jpg";
 import fadmi from "~/assets/images/mentors/fadmi.jpg";
 import harsa from "~/assets/images/mentors/harsa.jpeg";
@@ -14,6 +13,7 @@ import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
 import ulya from "~/assets/images/mentors/ulya.jpg";
 import suwoko from "~/assets/images/mentors/suwoko.png";
 import anis from "~/assets/images/mentors/anis.png";
+import jarot from "~/assets/images/mentors/jarot.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 useHead({
@@ -161,60 +161,6 @@ const mentors = [
         project:
           "Menjadi Narasumber sebanyak 18 kali pada periode 2021 di 13 Kabupaten/Kota Jawa Tengah",
         position: "Narasumber",
-      },
-    ],
-  },
-  {
-    name: "Bosman Batubara, Ph.D.",
-    photo: bosman,
-    slug: "bosman-batubara",
-    profile: `Peneliti postdoctoral di proyek "Following Frontiers of the 'Forest City': Towards Sustainable and Inclusive Urbanization in Kalimantan and Beyond (NWO-Merian Fund, 2022-2026)". Mempertahankan tesis PhD yang berjudul "Banjir di Jakarta (pasca-) Orde Baru: Ekologi politik urbanisasi" di Departemen Geografi Manusia, Perencanaan, dan Pembangunan Internasional Universitas Amsterdam dan Departemen Tata Kelola Air di IHE-Delft Institute for Water Education. Meraih gelar Sarjana Teknik Geologi dari Universitas Gadjah Mada, Indonesia, dan Magister Teknik Sumber Daya Air dari VU Brussels dan KU Leuven, Belgia. Kepentingannya antara lain hubungan kapitalisme (dan urbanisasi) yang tidak merata di dalam dan di luar kota, dalam arah horizontal dan vertikal, melibatkan manusia dan non-manusia, di atas dan di bawah tanah.`,
-    experience: [
-      {
-        year: "",
-        job: "4 years of doctoral scholarship provided by Indonesia's Endowment Fund for Education (2015-8)",
-      },
-      {
-        year: "",
-        job: "3 years of 0.5 FTE research grant provided by University of Amsterdam entitled “Ground Up: a practice based analysis of groundwater governance for integrated urban water resources management in Semarang” (NWO project number: W07.50.1806)",
-      },
-      {
-        year: "",
-        job: "2 years of 0.8 FTE research with Human Geography and Spatial Planning Department Universiteit Utrecht; project: Following Frontiers of the 'Forest City': Towards Sustainable and Inclusive Urbanization in Kalimantan and Beyond (NWO-Merian Fund, 2022-2026)",
-      },
-      {
-        year: "",
-        job: "2023-5: member of consortium for 3 years research entitled “Caring the flows for healthier urban(ized) (ground)water in Semarang and Yogyakarta, Indonesia (CARING)” funded by IHE-Delft Institute for Water Education and the Government of Netherlands (the DUPC3 program).",
-      },
-    ],
-    education: [
-      {
-        university: "University of Amsterdam",
-        major: "PH.D Program: Water Governance Department,",
-      },
-      {
-        university: "VU Brussels and KU Leuven, Belgium",
-        major:
-          "Master Program: Interuniversity Programme in Water Resources Engineering,",
-      },
-      {
-        university: "Gadjah Mada University",
-        major: "Bachelor Geological Engineering",
-      },
-    ],
-    portfolio: [],
-    award: [],
-    publications: [
-      {
-        title:
-          "Batubara, B. (under review, 26/07/2023) On Contradiction: Decentring and Recentring city in urban studies. IJURR.",
-      },
-      {
-        title:
-          "Batubara, B., Kooy, M., and Ardhianie, N. and Belland, M. (under review, 30/06/2023). Contesting pro-growth urbanization and experimentation of degrowth through water metabolism in Semarang, Indonesia. Water Alternatives.",
-      },
-      {
-        title: "etc.",
       },
     ],
   },
@@ -742,6 +688,40 @@ const mentors = [
       },
     ],
     education: [],
+    portfolio: [],
+    publications: [],
+    award: [],
+  },
+  {
+    name: "Jarot Waskito",
+    photo: jarot,
+    slug: "jarot-waskito",
+    profile:
+      "Memulai fokus di dunia videografi sejak 2008. Sampai saat ini sudah membahkan banyak karya video baik video dokumenter, film pendek, maupun klip video liputan. Bisa bekerja secara tim maupun individu untuk menghasilkan karya video.",
+    experience: [
+      {
+        year: "2022",
+        job: "Video Jingle, Lapas Perempuan Yogyakarta",
+      },
+      {
+        year: "2022",
+        job: "Baskoro & Sekar: Pernikahan Penghayat Kerokhanian Sapta Darma, Video Dokumenter, Yayasan LKiS",
+      },
+      {
+        year: "2020",
+        job: "Company Profile, Balai Sertifikasi Industri",
+      },
+      {
+        year: "2020",
+        job: "Penghayat Lahir Batin, Video Dokumenter, Yayasan LKiS",
+      },
+    ],
+    education: [
+      {
+        university: "Universitas Negeri Yogyakarta",
+        major: "Sastra Indonesia",
+      },
+    ],
     portfolio: [],
     publications: [],
     award: [],

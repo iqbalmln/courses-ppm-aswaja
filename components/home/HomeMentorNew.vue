@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import abdulloh from "~/assets/images/mentors/abdulloh.jpeg";
 import muhsin from "~/assets/images/mentors/muhsin.jpg";
-import bosman from "~/assets/images/mentors/bosman.jpeg";
 import anif from "~/assets/images/mentors/anif.jpg";
 import fadmi from "~/assets/images/mentors/fadmi.jpg";
 import harsa from "~/assets/images/mentors/harsa.jpeg";
@@ -14,9 +13,38 @@ import maisaroh from "~/assets/images/mentors/maisaroh.jpg";
 import ulya from "~/assets/images/mentors/ulya.jpg";
 import suwoko from "~/assets/images/mentors/suwoko.png";
 import anis from "~/assets/images/mentors/anis.png";
+import jarot from "~/assets/images/mentors/jarot.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 const mentors = [
+  {
+    photo: saeroni,
+    name: "Saeroni, S.Ag., M.H.",
+    job: "Sekretaris Yayasan Bumi Aswaja Yogyakarta, pendiri dan pengelola SMP, SMA dan Pesantren Bumi Cendekia",
+    focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
+    link: "#",
+    slug: "saeroni",
+  },
+  {
+    photo: ulya,
+    name: "Mar'atul Uliyah, S.Pd.",
+    job: "Pemimpin Redaksi Majalah Suluh, FPUB",
+    focus: ["Jurnalistik"],
+    link: "#",
+    slug: "maratul-uliyah",
+  },
+  {
+    photo: anis,
+    name: "Anis Susila Abadi, S.T., M.Kom.",
+    job: "Dosen, Universitas Nahdlatul Ulama Yogyakarta",
+    focus: [
+      "Pengembangan Web",
+      "Pengembangan Apps Seluler",
+      "Desainer Basis Data",
+    ],
+    link: "#",
+    slug: "anis-susila",
+  },
   {
     photo: abdulloh,
     name: "Abdulloh Badruzzaman, S.T.,M.T.",
@@ -30,44 +58,12 @@ const mentors = [
     slug: "abdulloh-badruzzaman",
   },
   {
-    photo: muhsin,
-    name: "Ahmad Muhlisin",
-    job: "Redaktur Berita Betanews.id",
-    focus: ["Jurnalistik"],
+    photo: mursyaddad,
+    name: "Achmad Musyaddad, S.I.P.",
+    job: "Direktur, Yayasan Sanggar Inovasi Desa",
+    focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
-    slug: "ahmad-muhlisin",
-  },
-  {
-    photo: anif,
-    name: "Anif Faizi",
-    job: "Digital Business Betanews.id",
-    focus: [
-      "Manajemen Penjualan dan pemasaran",
-      "spesialis pemasaran digital",
-      "wartawan",
-    ],
-    link: "#",
-    slug: "anif-faizi",
-  },
-  {
-    photo: bosman,
-    name: "Bosman Batubara, Ph.D.",
-    job: "Postdoctoral researcher at Human Geography and Spatial Planning Department, Utrecht University",
-    focus: ["Keteknikan Sipil", "Keteknikan Lingkungan"],
-    link: "#",
-    slug: "bosman-batubara",
-  },
-  {
-    photo: fadmi,
-    name: "Fadmi Rina, S.Kom., M.Kom.",
-    job: "Asisten Ahli Universitas Nahdlatul Ulama Yogyakarta",
-    focus: [
-      "Pengembangan Web",
-      "Pengembangan Apps Seluler",
-      "Desainer Basis Data",
-    ],
-    link: "https://www.linkedin.com/in/fadmi-rina-5604ba38/",
-    slug: "fadmi-rina",
+    slug: "achmad-musyaddad",
   },
   {
     photo: harsa,
@@ -76,27 +72,6 @@ const mentors = [
     focus: ["Jurnalistik", "Public Relation"],
     link: "https://www.linkedin.com/in/harsa-permata-041a8272/",
     slug: "harsa-permata",
-  },
-  {
-    photo: maisaroh,
-    name: "Maisaroh, S.E., M.Si.",
-    job: "Dosen Program Studi Bisnis Digital Universitas Islam Indonesia",
-    focus: [
-      "Manajemen Penjualan dan pemasaran",
-      "Manajemen logistik, distribusi, dan halterkait",
-      "spesialis pemasaran digital",
-      "spesialis penembangan bisnis",
-    ],
-    link: "#",
-    slug: "maisaroh",
-  },
-  {
-    photo: ulya,
-    name: "Mar'atul Uliyah, S.Pd.",
-    job: "Pemimpin Redaksi Majalah Suluh, FPUB",
-    focus: ["Jurnalistik"],
-    link: "#",
-    slug: "maratul-uliyah",
   },
   {
     photo: mustaghfiroh,
@@ -119,22 +94,6 @@ const mentors = [
     slug: "pusvyta-sari",
   },
   {
-    photo: saeroni,
-    name: "Saeroni, S.Ag., M.H.",
-    job: "Sekretaris Yayasan Bumi Aswaja Yogyakarta, pendiri dan pengelola SMP, SMA dan Pesantren Bumi Cendekia",
-    focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
-    link: "#",
-    slug: "saeroni",
-  },
-  {
-    photo: mursyaddad,
-    name: "Achmad Musyaddad, S.I.P.",
-    job: "Direktur, Yayasan Sanggar Inovasi Desa",
-    focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
-    link: "#",
-    slug: "achmad-musyaddad",
-  },
-  {
     photo: farid,
     name: "Farid Assifa, S.Fil.",
     job: "Editor, KOMPAS.COM",
@@ -143,24 +102,65 @@ const mentors = [
     slug: "farid-assifa",
   },
   {
+    photo: jarot,
+    name: "Jarot Waskito",
+    job: "Videografer",
+    focus: [""],
+    link: "https://www.linkedin.com/in/farid-assifa-90112645/",
+    slug: "jarot-waskito",
+  },
+  {
+    photo: muhsin,
+    name: "Ahmad Muhlisin",
+    job: "Redaktur Berita Betanews.id",
+    focus: ["Jurnalistik"],
+    link: "#",
+    slug: "ahmad-muhlisin",
+  },
+  {
+    photo: anif,
+    name: "Anif Faizi",
+    job: "Digital Business Betanews.id",
+    focus: [
+      "Manajemen Penjualan dan pemasaran",
+      "spesialis pemasaran digital",
+      "wartawan",
+    ],
+    link: "#",
+    slug: "anif-faizi",
+  },
+  {
+    photo: fadmi,
+    name: "Fadmi Rina, S.Kom., M.Kom.",
+    job: "Asisten Ahli Universitas Nahdlatul Ulama Yogyakarta",
+    focus: [
+      "Pengembangan Web",
+      "Pengembangan Apps Seluler",
+      "Desainer Basis Data",
+    ],
+    link: "https://www.linkedin.com/in/fadmi-rina-5604ba38/",
+    slug: "fadmi-rina",
+  },
+  {
+    photo: maisaroh,
+    name: "Maisaroh, S.E., M.Si.",
+    job: "Dosen Program Studi Bisnis Digital Universitas Islam Indonesia",
+    focus: [
+      "Manajemen Penjualan dan pemasaran",
+      "Manajemen logistik, distribusi, dan halterkait",
+      "spesialis pemasaran digital",
+      "spesialis penembangan bisnis",
+    ],
+    link: "#",
+    slug: "maisaroh",
+  },
+  {
     photo: suwoko,
     name: "Suwoko S.Pd.",
     job: "Founder Beta Media, (betanews.id)",
     focus: ["Jurnalistik"],
     link: "#",
     slug: "suwoko",
-  },
-  {
-    photo: anis,
-    name: "Anis Susila Abadi, S.T., M.Kom.",
-    job: "Dosen, Universitas Nahdlatul Ulama Yogyakarta",
-    focus: [
-      "Pengembangan Web",
-      "Pengembangan Apps Seluler",
-      "Desainer Basis Data",
-    ],
-    link: "#",
-    slug: "anis-susila",
   },
 ];
 const tagClass = (focus: string) => {

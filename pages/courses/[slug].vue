@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import abdulloh from "~/assets/images/mentors/abdulloh.jpeg";
 import muhsin from "~/assets/images/mentors/muhsin.jpg";
-import bosman from "~/assets/images/mentors/bosman.jpeg";
 import anif from "~/assets/images/mentors/anif.jpg";
 import fadmi from "~/assets/images/mentors/fadmi.jpg";
 import harsa from "~/assets/images/mentors/harsa.jpeg";
@@ -192,41 +191,6 @@ const courses = ref([
         image: woman,
         answer:
           "Dampaknya, perusahaan kesulitan mengambil keputusan yang tepat. Oleh karena itu diperlukan pengetahuan dasar SQL untuk calon engineer database yang seringkali dibutuhkan di era digital ini. Bagian ini akan membahas kebutuhan dan manfaat memahami dasar-dasar SQL dalam profesi calon engineer database.",
-      },
-    ],
-  },
-  {
-    name: "Merancang sistem pengelolaan limbah cair rumah tangga kawasan urban untuk insinyur sipil dan lingkungan",
-    slug: "wastewater-management-system",
-    image:
-      "https://images.unsplash.com/photo-1581093196867-ca3dba3c721b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
-    mentors: [
-      {
-        name: "Bosman Batubara, Ph.D.",
-        image: bosman,
-      },
-    ],
-    faq: [
-      {
-        id: 0,
-        question: "Tantangan Kualitas Air Global",
-        image: discuss,
-        answer:
-          "Data dari worldwaterday.org menunjukkan bahwa 1,8 miliar penduduk dunia masih mendapatkan air minum dari sumber terkontaminasi limbah, meningkatkan risiko penularan penyakit serius. Bab ini akan menguraikan tantangan global terkait kualitas air dan dampaknya pada kesehatan masyarakat.",
-      },
-      {
-        id: 1,
-        question: "Peran Insinyur Lingkungan",
-        image: man,
-        answer:
-          "Masalah limbah ini belum sepenuhnya tertangani, terutama di sektor industri yang melibatkan insinyur lingkungan. Bagian ini akan membahas peran insinyur lingkungan dalam menghadapi masalah limbah dan mengapa mereka memiliki peran krusial dalam upaya menjaga kualitas air dan lingkungan hidup.",
-      },
-      {
-        id: 2,
-        question: "Kompetensi yang Diperlukan oleh Insinyur Lingkungan",
-        image: woman,
-        answer:
-          "Insinyur lingkungan harus memiliki kemampuan untuk mengenali jenis limbah, menentukan karakteristik sumber pencemar air limbah, menilai tingkat pencemar air limbah, serta menjalankan tindakan Keselamatan dan Kesehatan Kerja (K3) dalam pengolahan air limbah. Bagian ini akan menguraikan kompetensi yang diperlukan oleh insinyur lingkungan untuk mengatasi tantangan ini.",
       },
     ],
   },

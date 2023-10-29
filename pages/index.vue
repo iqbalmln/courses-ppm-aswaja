@@ -54,17 +54,6 @@ const courses = ref([
     active: false,
     ref: "sql",
   },
-  {
-    name: "Merancang sistem pengelolaan limbah cair",
-    price: "Rp.1.500.000",
-    description:
-      "Insinyur lingkungan harus memiliki kemampuan untuk mengidentifikasi jenis limbah, menganalisis karakteristik pencemar air limbah, mengevaluasi tingkat pencemaran, serta menerapkan tindakan Keselamatan dan Kesehatan Kerja (K3) dalam pengolahan air limbah. Permintaan pekerjaan di bidang insinyur lingkungan terus meningkat seiring dengan meningkatnya kesadaran akan isu lingkungan, menunjukkan peran penting mereka dalam menjaga kualitas air dan lingkungan hidup.",
-    figure:
-      "https://images.unsplash.com/photo-1581093196867-ca3dba3c721b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
-    background: "bg-[#fbbf24]",
-    active: false,
-    ref: "limbah",
-  },
 ]);
 
 gsap.registerPlugin(ScrollTrigger);
