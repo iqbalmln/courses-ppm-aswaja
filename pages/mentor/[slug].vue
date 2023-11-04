@@ -14,6 +14,7 @@ import ulya from "~/assets/images/mentors/ulya.jpg";
 import suwoko from "~/assets/images/mentors/suwoko.png";
 import anis from "~/assets/images/mentors/anis.png";
 import jarot from "~/assets/images/mentors/jarot.jpg";
+import danang from "~/assets/images/mentors/danang.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 useHead({
@@ -725,6 +726,73 @@ const mentors = [
     portfolio: [],
     publications: [],
     award: [],
+  },
+  {
+    name: "Datang Teguh Qoyyimi, S.Si., M.Sc., M.Act.Sc., Ph.D.",
+    photo: danang,
+    slug: "danang-teguh",
+    profile: "Berprofesi sebagai Dosen di UGM",
+    experience: [
+      {
+        year: "2008 - Sampai Sekarang",
+        job: "Dosen",
+      },
+    ],
+    education: [
+      {
+        university: "University of Waterloo, Canada",
+        major:
+          "M.Act.Sc., Professional master program in Actuarial Science, Oct, 2018",
+      },
+      {
+        university: "University of Western Ontario, London, Ontario, Canada",
+        major: "Ph.D., Statistics, Actuarial Science, Feb 2016",
+      },
+      {
+        university: "Universitas Gadjah Mada, Yogyakarta, Indonesia",
+        major: "M.Sc., Mathematics, Oct, 2008",
+      },
+    ],
+    portfolio: [
+      {
+        project:
+          "Modeling and Understanding Indonesian Tropical Peatland for Sustainable Development",
+        position: "researcher",
+      },
+      {
+        project:
+          "The application of actuarial models on earthquake financing in Indonesia",
+        position: "principal investigator",
+      },
+      {
+        project: "The adapted Preston Curve to manage longevity risk",
+        position: "principal investigator",
+      },
+    ],
+    publications: [
+      {
+        title:
+          "Qoyyimi, D. T. and Utama, R.C. (2023). Adapted Preston’s Curve: a Proxy Method for Longevity Risk Analysis on Indonesian Pension Plan. BAREKENG: Journal of Mathematics and Its Applications, 17(2): 0897–0904.",
+      },
+      {
+        title:
+          "Yogesswara, G.A.P., Qoyyimi, D. T. and Abdurakhman (2023). Managing Heart Related diseases Risks in BPJS Kesehatan using Collective Risk Models Media Statistika, 15(2): 175–185.",
+      },
+      {
+        title:
+          "Qoyyimi, D. T. and Zitikis, R. (2015). Measuring association via lack of comonotonicity: the LOC index and a problem of educational assessment. Dependence Modeling, 3(1): 83–97.",
+      },
+    ],
+    award: [
+      {
+        title:
+          "READI (Risk Management, Economic Sustainability, and Actuarial Science Development in Indonesia) scholarship, University of Waterloo",
+      },
+      {
+        title:
+          "Directorate General of Higher Education of Indonesia Scholarship for Ph.D study",
+      },
+    ],
   },
 ];
 </script>

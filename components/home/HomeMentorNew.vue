@@ -14,6 +14,7 @@ import ulya from "~/assets/images/mentors/ulya.jpg";
 import suwoko from "~/assets/images/mentors/suwoko.png";
 import anis from "~/assets/images/mentors/anis.png";
 import jarot from "~/assets/images/mentors/jarot.jpg";
+import danang from "~/assets/images/mentors/danang.jpg";
 import defaultImage from "~/assets/images/mentors/default.webp";
 
 const mentors = [
@@ -24,14 +25,6 @@ const mentors = [
     focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
     slug: "saeroni",
-  },
-  {
-    photo: ulya,
-    name: "Mar'atul Uliyah, S.Pd.",
-    job: "Pemimpin Redaksi Majalah Suluh, FPUB",
-    focus: ["Jurnalistik"],
-    link: "#",
-    slug: "maratul-uliyah",
   },
   {
     photo: anis,
@@ -46,24 +39,20 @@ const mentors = [
     slug: "anis-susila",
   },
   {
-    photo: abdulloh,
-    name: "Abdulloh Badruzzaman, S.T.,M.T.",
-    job: "Dosen Prodi Informatika UNU Yogyakarta",
-    focus: [
-      "Pengembangan Web",
-      "Pengembangan Apps Seluler",
-      "Desainer Basis Data",
-    ],
-    link: "https://www.linkedin.com/in/abdulloh-badruzzaman-7a68271a4/",
-    slug: "abdulloh-badruzzaman",
-  },
-  {
     photo: mursyaddad,
     name: "Achmad Musyaddad, S.I.P.",
     job: "Direktur, Yayasan Sanggar Inovasi Desa",
     focus: ["Analis Manejemen Organisasi", "Manejemen Sumber Daya Manusia"],
     link: "#",
     slug: "achmad-musyaddad",
+  },
+  {
+    photo: danang,
+    name: "Datang Teguh Qoyyimi, S.Si., M.Sc., M.Act.Sc., Ph.D.",
+    job: "Dosen, Univesitas Gajah Mada",
+    focus: ["Matematika dan Aktuaria"],
+    link: "#",
+    slug: "danang-teguh",
   },
   {
     photo: harsa,
@@ -80,6 +69,14 @@ const mentors = [
     focus: ["Manejemen Sumber Daya Manusia", "spesialis pemasaran digital"],
     link: "https://www.linkedin.com/in/mustaghfiroh-rahayu-9a69ba214/",
     slug: "mustaghfiroh-rahayu",
+  },
+  {
+    photo: ulya,
+    name: "Mar'atul Uliyah, S.Pd.",
+    job: "Pemimpin Redaksi Majalah Suluh, FPUB",
+    focus: ["Jurnalistik"],
+    link: "#",
+    slug: "maratul-uliyah",
   },
   {
     photo: pusvyta,
@@ -108,6 +105,18 @@ const mentors = [
     focus: [""],
     link: "https://www.linkedin.com/in/farid-assifa-90112645/",
     slug: "jarot-waskito",
+  },
+  {
+    photo: abdulloh,
+    name: "Abdulloh Badruzzaman, S.T.,M.T.",
+    job: "Dosen Prodi Informatika UNU Yogyakarta",
+    focus: [
+      "Pengembangan Web",
+      "Pengembangan Apps Seluler",
+      "Desainer Basis Data",
+    ],
+    link: "https://www.linkedin.com/in/abdulloh-badruzzaman-7a68271a4/",
+    slug: "abdulloh-badruzzaman",
   },
   {
     photo: muhsin,
