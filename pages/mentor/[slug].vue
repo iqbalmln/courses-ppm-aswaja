@@ -728,7 +728,7 @@ const mentors = [
     award: [],
   },
   {
-    name: "Datang Teguh Qoyyimi, S.Si., M.Sc., M.Act.Sc., Ph.D.",
+    name: "Danang Teguh Qoyyimi, S.Si., M.Sc., M.Act.Sc., Ph.D.",
     photo: danang,
     slug: "danang-teguh",
     profile: "Berprofesi sebagai Dosen di UGM",
